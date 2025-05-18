@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="NeobankSuite"  >
+	
+	
+	<listeners>
+               <listener class-name="abound.neobank.utilities.Listeners"/>
+               <listener class-name="abound.neobank.utilities.SparkHTML"/>
+    </listeners>
+
+        <suite-files >
+
+        <suite-file path="AboundRegression.xml"></suite-file>
+
+        </suite-files>
+ 
+ </suite>
+ 
+ 

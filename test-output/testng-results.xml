@@ -1,0 +1,1091 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="18" ignored="0" total="51" passed="33">
+  <reporter-output>
+  </reporter-output>
+  <suite name="NeoBankServicesSuite" duration-ms="392309" started-at="2023-05-01T08:11:16Z" finished-at="2023-05-01T08:17:48Z">
+    <groups>
+      <group name="smoke">
+        <method signature="NewUSUserFlowTest.cardIssuanceServicePassingFalseForCardCreationTest()[pri:34, instance:abound.neobank.TestCases.NewUSUserFlowTest@31ef45e3]" name="cardIssuanceServicePassingFalseForCardCreationTest" class="abound.neobank.TestCases.NewUSUserFlowTest"/>
+        <method signature="NewUSUserFlowTest.cardIssuanceServicePassingTrueForUserAgreementTest()[pri:33, instance:abound.neobank.TestCases.NewUSUserFlowTest@31ef45e3]" name="cardIssuanceServicePassingTrueForUserAgreementTest" class="abound.neobank.TestCases.NewUSUserFlowTest"/>
+        <method signature="NewUSUserFlowTest.createACHServiceTest()[pri:42, instance:abound.neobank.TestCases.NewUSUserFlowTest@31ef45e3]" name="createACHServiceTest" class="abound.neobank.TestCases.NewUSUserFlowTest"/>
+        <method signature="NewUSUserFlowTest.createDepositAccountServiceForAccountOpening()[pri:29, instance:abound.neobank.TestCases.NewUSUserFlowTest@31ef45e3]" name="createDepositAccountServiceForAccountOpening" class="abound.neobank.TestCases.NewUSUserFlowTest"/>
+        <method signature="NewUSUserFlowTest.createDepositAccountServiceForUserAgreement()[pri:28, instance:abound.neobank.TestCases.NewUSUserFlowTest@31ef45e3]" name="createDepositAccountServiceForUserAgreement" class="abound.neobank.TestCases.NewUSUserFlowTest"/>
+        <method signature="NewUSUserFlowTest.getBankAccountDetailsForNode()[pri:31, instance:abound.neobank.TestCases.NewUSUserFlowTest@31ef45e3]" name="getBankAccountDetailsForNode" class="abound.neobank.TestCases.NewUSUserFlowTest"/>
+        <method signature="NewUSUserFlowTest.getCardNumberUnMaskedService()[pri:38, instance:abound.neobank.TestCases.NewUSUserFlowTest@31ef45e3]" name="getCardNumberUnMaskedService" class="abound.neobank.TestCases.NewUSUserFlowTest"/>
+        <method signature="NewUSUserFlowTest.getNodeIdTestForSecurity()[pri:42, instance:abound.neobank.TestCases.NewUSUserFlowTest@31ef45e3]" name="getNodeIdTestForSecurity" class="abound.neobank.TestCases.NewUSUserFlowTest"/>
+        <method signature="NewUSUserFlowTest.getPlaidAccountsData()[pri:41, instance:abound.neobank.TestCases.NewUSUserFlowTest@31ef45e3]" name="getPlaidAccountsData" class="abound.neobank.TestCases.NewUSUserFlowTest"/>
+        <method signature="NewUSUserFlowTest.getUserDetailService()[pri:30, instance:abound.neobank.TestCases.NewUSUserFlowTest@31ef45e3]" name="getUserDetailService" class="abound.neobank.TestCases.NewUSUserFlowTest"/>
+        <method signature="NewUSUserFlowTest.securityCheckPinService()[pri:42, instance:abound.neobank.TestCases.NewUSUserFlowTest@31ef45e3]" name="securityCheckPinService" class="abound.neobank.TestCases.NewUSUserFlowTest"/>
+        <method signature="NewUSUserFlowTest.usUserBlockCardService()[pri:39, instance:abound.neobank.TestCases.NewUSUserFlowTest@31ef45e3]" name="usUserBlockCardService" class="abound.neobank.TestCases.NewUSUserFlowTest"/>
+        <method signature="NewUSUserFlowTest.usUserCardActivate()[pri:35, instance:abound.neobank.TestCases.NewUSUserFlowTest@31ef45e3]" name="usUserCardActivate" class="abound.neobank.TestCases.NewUSUserFlowTest"/>
+        <method signature="NewUSUserFlowTest.usUserTransactions()[pri:36, instance:abound.neobank.TestCases.NewUSUserFlowTest@31ef45e3]" name="usUserTransactions" class="abound.neobank.TestCases.NewUSUserFlowTest"/>
+        <method signature="NewUSUserFlowTest.usUserTransactionsPerPage()[pri:37, instance:abound.neobank.TestCases.NewUSUserFlowTest@31ef45e3]" name="usUserTransactionsPerPage" class="abound.neobank.TestCases.NewUSUserFlowTest"/>
+        <method signature="RemittanceFlowTest.addBeneficiaryTest()[pri:44, instance:abound.neobank.TestCases.RemittanceFlowTest@598067a5]" name="addBeneficiaryTest" class="abound.neobank.TestCases.RemittanceFlowTest"/>
+        <method signature="RemittanceFlowTest.getExgangeRateTest()[pri:43, instance:abound.neobank.TestCases.RemittanceFlowTest@598067a5]" name="getExgangeRateTest" class="abound.neobank.TestCases.RemittanceFlowTest"/>
+        <method signature="RemittanceFlowTest.getFundingSourceDataTest()[pri:46, instance:abound.neobank.TestCases.RemittanceFlowTest@598067a5]" name="getFundingSourceDataTest" class="abound.neobank.TestCases.RemittanceFlowTest"/>
+        <method signature="RemittanceFlowTest.getPaymentReasonsDataTest()[pri:45, instance:abound.neobank.TestCases.RemittanceFlowTest@598067a5]" name="getPaymentReasonsDataTest" class="abound.neobank.TestCases.RemittanceFlowTest"/>
+        <method signature="RemittanceFlowTest.getRequestIdTest()[pri:47, instance:abound.neobank.TestCases.RemittanceFlowTest@598067a5]" name="getRequestIdTest" class="abound.neobank.TestCases.RemittanceFlowTest"/>
+        <method signature="RemittanceFlowTest.getUserBeneficiaryListTest()[pri:44, instance:abound.neobank.TestCases.RemittanceFlowTest@598067a5]" name="getUserBeneficiaryListTest" class="abound.neobank.TestCases.RemittanceFlowTest"/>
+        <method signature="RemittanceFlowTest.initiateTransactionTest()[pri:47, instance:abound.neobank.TestCases.RemittanceFlowTest@598067a5]" name="initiateTransactionTest" class="abound.neobank.TestCases.RemittanceFlowTest"/>
+        <method signature="SignUpAndKYCFlowTest.apiFlowMappingTest()[pri:27, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="apiFlowMappingTest" class="abound.neobank.TestCases.SignUpAndKYCFlowTest"/>
+        <method signature="SignUpAndKYCFlowTest.validateAdressServiceTest()[pri:6, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="validateAdressServiceTest" class="abound.neobank.TestCases.SignUpAndKYCFlowTest"/>
+        <method signature="SignUpAndKYCFlowTest.validationOfGetKycStatusService()[pri:26, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="validationOfGetKycStatusService" class="abound.neobank.TestCases.SignUpAndKYCFlowTest"/>
+        <method signature="SignUpAndKYCFlowTest.validationOfSynapseService()[pri:12, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="validationOfSynapseService" class="abound.neobank.TestCases.SignUpAndKYCFlowTest"/>
+        <method signature="SignUpAndKYCFlowTest.verifyOtpServiceTest()[pri:4, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="verifyOtpServiceTest" class="abound.neobank.TestCases.SignUpAndKYCFlowTest"/>
+        <method signature="SignUpAndKYCFlowTest.verifyTheSSNService()[pri:7, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="verifyTheSSNService" class="abound.neobank.TestCases.SignUpAndKYCFlowTest"/>
+        <method signature="SignUpAndKYCFlowTest.verifyTheUpdateUser()[pri:5, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="verifyTheUpdateUser" class="abound.neobank.TestCases.SignUpAndKYCFlowTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test name="neoBankTest1" duration-ms="392309" started-at="2023-05-01T08:11:16Z" finished-at="2023-05-01T08:17:48Z">
+      <class name="abound.neobank.TestCases.NewUSUserFlowTest">
+        <test-method status="PASS" signature="createDepositAccountServiceForUserAgreement()[pri:28, instance:abound.neobank.TestCases.NewUSUserFlowTest@31ef45e3]" name="createDepositAccountServiceForUserAgreement" duration-ms="1617" started-at="2023-05-01T08:14:35Z" finished-at="2023-05-01T08:14:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDepositAccountServiceForUserAgreement -->
+        <test-method status="PASS" signature="createDepositAccountServiceForAccountOpening()[pri:29, instance:abound.neobank.TestCases.NewUSUserFlowTest@31ef45e3]" name="createDepositAccountServiceForAccountOpening" duration-ms="1700" started-at="2023-05-01T08:14:37Z" finished-at="2023-05-01T08:14:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDepositAccountServiceForAccountOpening -->
+        <test-method status="PASS" signature="getUserDetailService()[pri:30, instance:abound.neobank.TestCases.NewUSUserFlowTest@31ef45e3]" name="getUserDetailService" duration-ms="1795" started-at="2023-05-01T08:14:39Z" finished-at="2023-05-01T08:14:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserDetailService -->
+        <test-method status="PASS" signature="getBankAccountDetailsForNode()[pri:31, instance:abound.neobank.TestCases.NewUSUserFlowTest@31ef45e3]" name="getBankAccountDetailsForNode" duration-ms="1897" started-at="2023-05-01T08:14:41Z" finished-at="2023-05-01T08:14:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBankAccountDetailsForNode -->
+        <test-method status="FAIL" signature="cardIssuanceServicePassingTrueForUserAgreementTest()[pri:33, instance:abound.neobank.TestCases.NewUSUserFlowTest@31ef45e3]" name="cardIssuanceServicePassingTrueForUserAgreementTest" duration-ms="1866" started-at="2023-05-01T08:14:43Z" finished-at="2023-05-01T08:14:44Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at abound.neobank.TestCases.NewUSUserFlowTest.cardIssuanceServicePassingTrueForUserAgreementTest(NewUSUserFlowTest.java:109)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cardIssuanceServicePassingTrueForUserAgreementTest -->
+        <test-method status="FAIL" signature="cardIssuanceServicePassingFalseForCardCreationTest()[pri:34, instance:abound.neobank.TestCases.NewUSUserFlowTest@31ef45e3]" name="cardIssuanceServicePassingFalseForCardCreationTest" duration-ms="1633" started-at="2023-05-01T08:14:44Z" finished-at="2023-05-01T08:14:46Z">
+          <exception class="io.restassured.path.json.exception.JsonPathException">
+            <message>
+              <![CDATA[Failed to parse the JSON document]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
+at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
+at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
+at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+at io.restassured.path.json.JsonPath.getString(JsonPath.java:352)
+at abound.neobank.services.NewUSUserFlow.cardIssuanceServicePassingFalseForCardCreation(NewUSUserFlow.java:281)
+at abound.neobank.TestCases.NewUSUserFlowTest.cardIssuanceServicePassingFalseForCardCreationTest(NewUSUserFlowTest.java:115)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: java.lang.IllegalArgumentException: The JSON input text should neither be null nor empty.
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:58)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:80)
+at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
+at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
+... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.restassured.path.json.exception.JsonPathException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cardIssuanceServicePassingFalseForCardCreationTest -->
+        <test-method status="FAIL" signature="usUserCardActivate()[pri:35, instance:abound.neobank.TestCases.NewUSUserFlowTest@31ef45e3]" name="usUserCardActivate" duration-ms="103677" started-at="2023-05-01T08:14:46Z" finished-at="2023-05-01T08:16:30Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at abound.neobank.TestCases.NewUSUserFlowTest.usUserCardActivate(NewUSUserFlowTest.java:140)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- usUserCardActivate -->
+        <test-method status="FAIL" signature="usUserTransactions()[pri:36, instance:abound.neobank.TestCases.NewUSUserFlowTest@31ef45e3]" name="usUserTransactions" duration-ms="1713" started-at="2023-05-01T08:16:30Z" finished-at="2023-05-01T08:16:31Z">
+          <exception class="io.restassured.path.json.exception.JsonPathException">
+            <message>
+              <![CDATA[Failed to parse the JSON document]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
+at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
+at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
+at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+at io.restassured.path.json.JsonPath.getMap(JsonPath.java:420)
+at abound.neobank.services.NewUSUserFlow.transactionPerPage(NewUSUserFlow.java:324)
+at abound.neobank.TestCases.NewUSUserFlowTest.usUserTransactions(NewUSUserFlowTest.java:146)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: java.lang.IllegalArgumentException: The JSON input text should neither be null nor empty.
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:80)
+at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
+at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
+... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.restassured.path.json.exception.JsonPathException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- usUserTransactions -->
+        <test-method status="FAIL" signature="usUserTransactionsPerPage()[pri:37, instance:abound.neobank.TestCases.NewUSUserFlowTest@31ef45e3]" name="usUserTransactionsPerPage" duration-ms="1628" started-at="2023-05-01T08:16:31Z" finished-at="2023-05-01T08:16:33Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at abound.neobank.TestCases.NewUSUserFlowTest.usUserTransactionsPerPage(NewUSUserFlowTest.java:169)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- usUserTransactionsPerPage -->
+        <test-method status="FAIL" signature="getCardNumberUnMaskedService()[pri:38, instance:abound.neobank.TestCases.NewUSUserFlowTest@31ef45e3]" name="getCardNumberUnMaskedService" duration-ms="1586" started-at="2023-05-01T08:16:33Z" finished-at="2023-05-01T08:16:35Z">
+          <exception class="io.restassured.path.json.exception.JsonPathException">
+            <message>
+              <![CDATA[Failed to parse the JSON document]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
+at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
+at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
+at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+at io.restassured.path.json.JsonPath.getMap(JsonPath.java:420)
+at abound.neobank.services.NewUSUserFlow.getCardNumberUnMasked(NewUSUserFlow.java:204)
+at abound.neobank.TestCases.NewUSUserFlowTest.getCardNumberUnMaskedService(NewUSUserFlowTest.java:84)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: java.lang.IllegalArgumentException: The JSON input text should neither be null nor empty.
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:80)
+at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
+at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
+... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.restassured.path.json.exception.JsonPathException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCardNumberUnMaskedService -->
+        <test-method status="FAIL" signature="usUserBlockCardService()[pri:39, instance:abound.neobank.TestCases.NewUSUserFlowTest@31ef45e3]" name="usUserBlockCardService" duration-ms="1592" started-at="2023-05-01T08:16:35Z" finished-at="2023-05-01T08:16:36Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at abound.neobank.TestCases.NewUSUserFlowTest.usUserBlockCardService(NewUSUserFlowTest.java:183)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- usUserBlockCardService -->
+        <test-method status="FAIL" signature="getPlaidAccountsData()[pri:41, instance:abound.neobank.TestCases.NewUSUserFlowTest@31ef45e3]" name="getPlaidAccountsData" duration-ms="1600" started-at="2023-05-01T08:16:36Z" finished-at="2023-05-01T08:16:38Z">
+          <exception class="io.restassured.path.json.exception.JsonPathException">
+            <message>
+              <![CDATA[Failed to parse the JSON document]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
+at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
+at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
+at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+at io.restassured.path.json.JsonPath.getMap(JsonPath.java:420)
+at abound.neobank.services.NewUSUserFlow.getPlaidAccountData(NewUSUserFlow.java:562)
+at abound.neobank.TestCases.NewUSUserFlowTest.getPlaidAccountsData(NewUSUserFlowTest.java:189)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: java.lang.IllegalArgumentException: The JSON input text should neither be null nor empty.
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:80)
+at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
+at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
+... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.restassured.path.json.exception.JsonPathException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPlaidAccountsData -->
+        <test-method status="FAIL" signature="createACHServiceTest()[pri:42, instance:abound.neobank.TestCases.NewUSUserFlowTest@31ef45e3]" name="createACHServiceTest" duration-ms="1566" started-at="2023-05-01T08:16:38Z" finished-at="2023-05-01T08:16:39Z">
+          <exception class="io.restassured.path.json.exception.JsonPathException">
+            <message>
+              <![CDATA[Failed to parse the JSON document]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
+at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
+at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
+at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+at io.restassured.path.json.JsonPath.getString(JsonPath.java:352)
+at abound.neobank.services.NewUSUserFlow.createACHService(NewUSUserFlow.java:601)
+at abound.neobank.TestCases.NewUSUserFlowTest.createACHServiceTest(NewUSUserFlowTest.java:203)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: java.lang.IllegalArgumentException: The JSON input text should neither be null nor empty.
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:80)
+at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
+at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
+... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.restassured.path.json.exception.JsonPathException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createACHServiceTest -->
+        <test-method status="FAIL" signature="getNodeIdTestForSecurity()[pri:42, instance:abound.neobank.TestCases.NewUSUserFlowTest@31ef45e3]" name="getNodeIdTestForSecurity" duration-ms="3129" started-at="2023-05-01T08:16:39Z" finished-at="2023-05-01T08:16:43Z">
+          <exception class="io.restassured.path.json.exception.JsonPathException">
+            <message>
+              <![CDATA[Failed to parse the JSON document]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
+at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
+at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
+at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+at io.restassured.path.json.JsonPath.getMap(JsonPath.java:420)
+at abound.neobank.services.NewUSUserFlow.getCardNumberSecurityTest(NewUSUserFlow.java:681)
+at abound.neobank.services.NewUSUserFlow.getCardNumber(NewUSUserFlow.java:639)
+at abound.neobank.TestCases.NewUSUserFlowTest.getNodeIdTestForSecurity(NewUSUserFlowTest.java:218)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: java.lang.IllegalArgumentException: The JSON input text should neither be null nor empty.
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:80)
+at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
+at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
+... 32 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.restassured.path.json.exception.JsonPathException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNodeIdTestForSecurity -->
+        <test-method status="FAIL" signature="securityCheckPinService()[pri:42, instance:abound.neobank.TestCases.NewUSUserFlowTest@31ef45e3]" name="securityCheckPinService" duration-ms="1600" started-at="2023-05-01T08:16:43Z" finished-at="2023-05-01T08:16:44Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at abound.neobank.TestCases.NewUSUserFlowTest.securityCheckPinService(NewUSUserFlowTest.java:240)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- securityCheckPinService -->
+      </class> <!-- abound.neobank.TestCases.NewUSUserFlowTest -->
+      <class name="abound.neobank.TestCases.SignUpAndKYCFlowTest">
+        <test-method status="PASS" signature="propertyCheck()[pri:0, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="propertyCheck" is-config="true" duration-ms="78" started-at="2023-05-01T08:11:16Z" finished-at="2023-05-01T08:11:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- propertyCheck -->
+        <test-method status="PASS" signature="linkTokenTest()[pri:0, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="linkTokenTest" duration-ms="34387" started-at="2023-05-01T08:11:16Z" finished-at="2023-05-01T08:11:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linkTokenTest -->
+        <test-method status="PASS" signature="signUpServiceTest()[pri:2, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="signUpServiceTest" duration-ms="51999" started-at="2023-05-01T08:11:50Z" finished-at="2023-05-01T08:12:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpServiceTest -->
+        <test-method status="PASS" signature="uSignUpServiceTest()[pri:2, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="uSignUpServiceTest" duration-ms="1804" started-at="2023-05-01T08:12:42Z" finished-at="2023-05-01T08:12:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uSignUpServiceTest -->
+        <test-method status="PASS" signature="otpServiceTest()[pri:3, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="otpServiceTest" duration-ms="51844" started-at="2023-05-01T08:12:44Z" finished-at="2023-05-01T08:13:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- otpServiceTest -->
+        <test-method status="PASS" signature="verifyOtpServiceTest()[pri:4, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="verifyOtpServiceTest" duration-ms="3611" started-at="2023-05-01T08:13:36Z" finished-at="2023-05-01T08:13:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOtpServiceTest -->
+        <test-method status="PASS" signature="verifyTheUpdateUser()[pri:5, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="verifyTheUpdateUser" duration-ms="1816" started-at="2023-05-01T08:13:40Z" finished-at="2023-05-01T08:13:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheUpdateUser -->
+        <test-method status="PASS" signature="validateAdressServiceTest()[pri:6, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="validateAdressServiceTest" duration-ms="2178" started-at="2023-05-01T08:13:41Z" finished-at="2023-05-01T08:13:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAdressServiceTest -->
+        <test-method status="PASS" signature="verifyTheSSNService()[pri:7, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="verifyTheSSNService" duration-ms="1761" started-at="2023-05-01T08:13:44Z" finished-at="2023-05-01T08:13:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheSSNService -->
+        <test-method status="PASS" signature="verifySignupWithoutPassingJWTandLinkToken()[pri:8, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="verifySignupWithoutPassingJWTandLinkToken" duration-ms="1743" started-at="2023-05-01T08:13:45Z" finished-at="2023-05-01T08:13:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignupWithoutPassingJWTandLinkToken -->
+        <test-method status="PASS" signature="verifyWithoutLinkTokenInOTPService()[pri:9, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="verifyWithoutLinkTokenInOTPService" duration-ms="1820" started-at="2023-05-01T08:13:47Z" finished-at="2023-05-01T08:13:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWithoutLinkTokenInOTPService -->
+        <test-method status="PASS" signature="otpServiceInvalidEmailIdAndAuthorization()[pri:10, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="otpServiceInvalidEmailIdAndAuthorization" duration-ms="1731" started-at="2023-05-01T08:13:49Z" finished-at="2023-05-01T08:13:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- otpServiceInvalidEmailIdAndAuthorization -->
+        <test-method status="PASS" signature="validationOfTheSSNServcieOnPassingInvalidSSN()[pri:11, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="validationOfTheSSNServcieOnPassingInvalidSSN" duration-ms="1594" started-at="2023-05-01T08:13:51Z" finished-at="2023-05-01T08:13:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validationOfTheSSNServcieOnPassingInvalidSSN -->
+        <test-method status="PASS" signature="validationOfSynapseService()[pri:12, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="validationOfSynapseService" duration-ms="6426" started-at="2023-05-01T08:13:52Z" finished-at="2023-05-01T08:13:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validationOfSynapseService -->
+        <test-method status="PASS" signature="xvalidationOfSynapseService()[pri:12, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="xvalidationOfSynapseService" duration-ms="1584" started-at="2023-05-01T08:13:59Z" finished-at="2023-05-01T08:14:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- xvalidationOfSynapseService -->
+        <test-method status="PASS" signature="validationOfAddressFlowOnPassingWrongAddress()[pri:13, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="validationOfAddressFlowOnPassingWrongAddress" duration-ms="1727" started-at="2023-05-01T08:14:00Z" finished-at="2023-05-01T08:14:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validationOfAddressFlowOnPassingWrongAddress -->
+        <test-method status="PASS" signature="validationOfInvalidSSNNumber()[pri:14, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="validationOfInvalidSSNNumber" duration-ms="1580" started-at="2023-05-01T08:14:02Z" finished-at="2023-05-01T08:14:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validationOfInvalidSSNNumber -->
+        <test-method status="PASS" signature="validationOfKYCSeviceWithoutDeviceId()[pri:15, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="validationOfKYCSeviceWithoutDeviceId" duration-ms="1574" started-at="2023-05-01T08:14:04Z" finished-at="2023-05-01T08:14:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validationOfKYCSeviceWithoutDeviceId -->
+        <test-method status="PASS" signature="validationOfKYCServiceNegative()[pri:16, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="validationOfKYCServiceNegative" duration-ms="1638" started-at="2023-05-01T08:14:05Z" finished-at="2023-05-01T08:14:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validationOfKYCServiceNegative -->
+        <test-method status="PASS" signature="validationOfAddressServiceOnWrongAdd()[pri:17, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="validationOfAddressServiceOnWrongAdd" duration-ms="1801" started-at="2023-05-01T08:14:07Z" finished-at="2023-05-01T08:14:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validationOfAddressServiceOnWrongAdd -->
+        <test-method status="PASS" signature="validUpdateServiceOnPassingInvalidToken()[pri:19, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="validUpdateServiceOnPassingInvalidToken" duration-ms="1609" started-at="2023-05-01T08:14:09Z" finished-at="2023-05-01T08:14:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validUpdateServiceOnPassingInvalidToken -->
+        <test-method status="PASS" signature="validateLoginServiceWithoutAuth()[pri:21, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="validateLoginServiceWithoutAuth" duration-ms="1778" started-at="2023-05-01T08:14:10Z" finished-at="2023-05-01T08:14:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLoginServiceWithoutAuth -->
+        <test-method status="PASS" signature="validateWhenSameUserIsLoggedInWithAnotherDevices()[pri:22, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="validateWhenSameUserIsLoggedInWithAnotherDevices" duration-ms="1812" started-at="2023-05-01T08:14:12Z" finished-at="2023-05-01T08:14:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateWhenSameUserIsLoggedInWithAnotherDevices -->
+        <test-method status="PASS" signature="validateSignUpServiceWithoutLongAndLatitude()[pri:23, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="validateSignUpServiceWithoutLongAndLatitude" duration-ms="1769" started-at="2023-05-01T08:14:14Z" finished-at="2023-05-01T08:14:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSignUpServiceWithoutLongAndLatitude -->
+        <test-method status="PASS" signature="validteLinkTokenOnMultipleHits()[pri:24, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="validteLinkTokenOnMultipleHits" duration-ms="1864" started-at="2023-05-01T08:14:16Z" finished-at="2023-05-01T08:14:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validteLinkTokenOnMultipleHits -->
+        <test-method status="PASS" signature="validateUpdateUserServiceOnNotPassingAuth()[pri:25, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="validateUpdateUserServiceOnNotPassingAuth" duration-ms="1571" started-at="2023-05-01T08:14:17Z" finished-at="2023-05-01T08:14:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUpdateUserServiceOnNotPassingAuth -->
+        <test-method status="PASS" signature="validationOfGetKycStatusService()[pri:26, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="validationOfGetKycStatusService" duration-ms="11299" started-at="2023-05-01T08:14:19Z" finished-at="2023-05-01T08:14:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validationOfGetKycStatusService -->
+        <test-method status="PASS" signature="apiFlowMappingTest()[pri:27, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="apiFlowMappingTest" duration-ms="1762" started-at="2023-05-01T08:14:30Z" finished-at="2023-05-01T08:14:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- apiFlowMappingTest -->
+        <test-method status="PASS" signature="apiFlowMappingTestForBlockedApis()[pri:27, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="apiFlowMappingTestForBlockedApis" duration-ms="1745" started-at="2023-05-01T08:14:32Z" finished-at="2023-05-01T08:14:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- apiFlowMappingTestForBlockedApis -->
+        <test-method status="PASS" signature="validationOfSynapseServiceNegative()[pri:27, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="validationOfSynapseServiceNegative" duration-ms="1620" started-at="2023-05-01T08:14:34Z" finished-at="2023-05-01T08:14:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validationOfSynapseServiceNegative -->
+        <test-method status="PASS" signature="sendHtmlReport()[pri:0, instance:abound.neobank.TestCases.SignUpAndKYCFlowTest@57fffcd7]" name="sendHtmlReport" is-config="true" duration-ms="4652" started-at="2023-05-01T08:17:48Z" finished-at="2023-05-01T08:17:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendHtmlReport -->
+      </class> <!-- abound.neobank.TestCases.SignUpAndKYCFlowTest -->
+      <class name="abound.neobank.TestCases.RemittanceFlowTest">
+        <test-method status="FAIL" signature="getExgangeRateTest()[pri:43, instance:abound.neobank.TestCases.RemittanceFlowTest@598067a5]" name="getExgangeRateTest" duration-ms="24124" started-at="2023-05-01T08:16:44Z" finished-at="2023-05-01T08:17:08Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at abound.neobank.TestCases.RemittanceFlowTest.getExgangeRateTest(RemittanceFlowTest.java:28)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getExgangeRateTest -->
+        <test-method status="FAIL" signature="addBeneficiaryTest()[pri:44, instance:abound.neobank.TestCases.RemittanceFlowTest@598067a5]" name="addBeneficiaryTest" duration-ms="1627" started-at="2023-05-01T08:17:08Z" finished-at="2023-05-01T08:17:10Z">
+          <exception class="io.restassured.path.json.exception.JsonPathException">
+            <message>
+              <![CDATA[Failed to parse the JSON document]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
+at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
+at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
+at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+at io.restassured.path.json.JsonPath.getMap(JsonPath.java:420)
+at abound.neobank.services.Remittance.addBeneficiary(Remittance.java:174)
+at abound.neobank.TestCases.RemittanceFlowTest.addBeneficiaryTest(RemittanceFlowTest.java:34)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: java.lang.IllegalArgumentException: The JSON input text should neither be null nor empty.
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:80)
+at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
+at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
+... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.restassured.path.json.exception.JsonPathException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addBeneficiaryTest -->
+        <test-method status="FAIL" signature="getUserBeneficiaryListTest()[pri:44, instance:abound.neobank.TestCases.RemittanceFlowTest@598067a5]" name="getUserBeneficiaryListTest" duration-ms="1598" started-at="2023-05-01T08:17:10Z" finished-at="2023-05-01T08:17:11Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at abound.neobank.TestCases.RemittanceFlowTest.getUserBeneficiaryListTest(RemittanceFlowTest.java:59)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserBeneficiaryListTest -->
+        <test-method status="FAIL" signature="getPaymentReasonsDataTest()[pri:45, instance:abound.neobank.TestCases.RemittanceFlowTest@598067a5]" name="getPaymentReasonsDataTest" duration-ms="1619" started-at="2023-05-01T08:17:11Z" finished-at="2023-05-01T08:17:13Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at abound.neobank.TestCases.RemittanceFlowTest.getPaymentReasonsDataTest(RemittanceFlowTest.java:75)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPaymentReasonsDataTest -->
+        <test-method status="FAIL" signature="getFundingSourceDataTest()[pri:46, instance:abound.neobank.TestCases.RemittanceFlowTest@598067a5]" name="getFundingSourceDataTest" duration-ms="1584" started-at="2023-05-01T08:17:13Z" finished-at="2023-05-01T08:17:15Z">
+          <exception class="io.restassured.path.json.exception.JsonPathException">
+            <message>
+              <![CDATA[Failed to parse the JSON document]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
+at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
+at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
+at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+at io.restassured.path.json.JsonPath.getMap(JsonPath.java:420)
+at abound.neobank.services.Remittance.getFundingSourceData(Remittance.java:108)
+at abound.neobank.TestCases.RemittanceFlowTest.getFundingSourceDataTest(RemittanceFlowTest.java:81)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: java.lang.IllegalArgumentException: The JSON input text should neither be null nor empty.
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:80)
+at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
+at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
+... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.restassured.path.json.exception.JsonPathException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getFundingSourceDataTest -->
+        <test-method status="FAIL" signature="getRequestIdTest()[pri:47, instance:abound.neobank.TestCases.RemittanceFlowTest@598067a5]" name="getRequestIdTest" duration-ms="1598" started-at="2023-05-01T08:17:15Z" finished-at="2023-05-01T08:17:16Z">
+          <exception class="io.restassured.path.json.exception.JsonPathException">
+            <message>
+              <![CDATA[Failed to parse the JSON document]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
+at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
+at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
+at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+at io.restassured.path.json.JsonPath.getString(JsonPath.java:352)
+at abound.neobank.services.Remittance.getRequestId(Remittance.java:206)
+at abound.neobank.TestCases.RemittanceFlowTest.getRequestIdTest(RemittanceFlowTest.java:111)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: java.lang.IllegalArgumentException: The JSON input text should neither be null nor empty.
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:80)
+at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
+at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
+... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.restassured.path.json.exception.JsonPathException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRequestIdTest -->
+        <test-method status="FAIL" signature="initiateTransactionTest()[pri:47, instance:abound.neobank.TestCases.RemittanceFlowTest@598067a5]" name="initiateTransactionTest" duration-ms="31993" started-at="2023-05-01T08:17:16Z" finished-at="2023-05-01T08:17:48Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at abound.neobank.TestCases.RemittanceFlowTest.initiateTransactionTest(RemittanceFlowTest.java:105)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateTransactionTest -->
+      </class> <!-- abound.neobank.TestCases.RemittanceFlowTest -->
+    </test> <!-- neoBankTest1 -->
+  </suite> <!-- NeoBankServicesSuite -->
+</testng-results>

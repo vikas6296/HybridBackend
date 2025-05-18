@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [NeoBankServicesSuite]">
+  <listeners>
+    <listener class-name="abound.neobank.utilities.Listeners"/>
+    <listener class-name="abound.neobank.utilities.ExtentReport"/>
+  </listeners>
+  <test thread-count="5" name="neoBankTest1(failed)">
+    <classes>
+      <class name="abound.neobank.TestCases.NewUSUserFlowTest">
+        <methods>
+          <include name="cardIssuanceServicePassingFalseForCardCreationTest"/>
+          <include name="usUserTransactionsPerPage"/>
+          <include name="securityCheckPinService"/>
+          <include name="usUserCardActivate"/>
+          <include name="cardIssuanceServicePassingTrueForUserAgreementTest"/>
+          <include name="getNodeIdTestForSecurity"/>
+          <include name="createACHServiceTest"/>
+          <include name="getPlaidAccountsData"/>
+          <include name="getCardNumberUnMaskedService"/>
+          <include name="usUserBlockCardService"/>
+          <include name="usUserTransactions"/>
+        </methods>
+      </class> <!-- abound.neobank.TestCases.NewUSUserFlowTest -->
+      <class name="abound.neobank.TestCases.RemittanceFlowTest">
+        <methods>
+          <include name="initiateTransactionTest"/>
+          <include name="getExgangeRateTest"/>
+          <include name="getPaymentReasonsDataTest"/>
+          <include name="getUserBeneficiaryListTest"/>
+          <include name="addBeneficiaryTest"/>
+          <include name="getRequestIdTest"/>
+          <include name="getFundingSourceDataTest"/>
+        </methods>
+      </class> <!-- abound.neobank.TestCases.RemittanceFlowTest -->
+    </classes>
+  </test> <!-- neoBankTest1(failed) -->
+</suite> <!-- Failed suite [NeoBankServicesSuite] -->

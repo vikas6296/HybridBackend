@@ -1,0 +1,2088 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Neobank Automation Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@83e4e8776725a49f9e738b19d1e718e7404d6c19/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jun 24, 2024 01:25:10 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">functionalUseCase</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag="functionalUseCase"
+          device="">
+          <div class="status-avatar pass-bg">
+            <i class="fa fa-check text-white"></i>
+          </div>
+          <div class="test-detail">
+            <span class="meta text-white badge badge-sm"></span>
+            <p class="name">linkTokenTest</p>
+            <p class="text-sm"><span>13:25:12 PM</span> / <span>39.943 secs</span></p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<div class='float-right'><span class='badge badge-default'>#test-id=1</span></div>
+<h5 class="test-status text-pass">linkTokenTest</h5>
+<span class='badge badge-success'>06.24.2024 13:25:12</span>
+<span class='badge badge-danger'>06.24.2024 13:25:52</span>
+<span class='badge badge-default'>39.943 secs</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default"> functionalUseCase</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:25:12 PM</td>
+        <td>
+          fetching the linktoken for the TC user
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:25:52 PM</td>
+        <td>
+          status code --> 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:25:52 PM</td>
+        <td>
+          response---->{
+    "linkToken": "33d535393c52487d5c17eb2c540a2dfe",
+    "expiration": null,
+    "requestId": "22cdc6137b684d12",
+    "bankAddType": null,
+    "accountsPending": false,
+    "pendingBanks": null,
+    "sso_token": "e8377e0b8e01083675178f3499dfb6ca",
+    "is_user_signed_up": false,
+    "user_opted_in_remittance": false,
+    "user_opted_in_banking": false,
+    "success": true
+}
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag="functionalUseCase"
+          device="">
+          <div class="status-avatar pass-bg">
+            <i class="fa fa-check text-white"></i>
+          </div>
+          <div class="test-detail">
+            <span class="meta text-white badge badge-sm"></span>
+            <p class="name">signUpServiceTest</p>
+            <p class="text-sm"><span>13:25:52 PM</span> / <span>1.611 secs</span></p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<div class='float-right'><span class='badge badge-default'>#test-id=2</span></div>
+<h5 class="test-status text-pass">signUpServiceTest</h5>
+<span class='badge badge-success'>06.24.2024 13:25:52</span>
+<span class='badge badge-danger'>06.24.2024 13:25:53</span>
+<span class='badge badge-default'>1.611 secs</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default"> functionalUseCase</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:25:52 PM</td>
+        <td>
+          Signing up the user on neobank
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:25:53 PM</td>
+        <td>
+          status code --> 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:25:53 PM</td>
+        <td>
+          response---->{
+    "requestId": "efe7d0894ebbc8b6",
+    "messageId": "98b10800-4b67-4fa7-939d-a101cb74b803",
+    "userSignUpStatus": "REGISTERED",
+    "userType": "PRIMARY",
+    "newUserLogin": false,
+    "layer2MigrationRequired": false,
+    "success": true
+}
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag="functionalUseCase"
+          device="">
+          <div class="status-avatar pass-bg">
+            <i class="fa fa-check text-white"></i>
+          </div>
+          <div class="test-detail">
+            <span class="meta text-white badge badge-sm"></span>
+            <p class="name"> verifyOtpServiceTest</p>
+            <p class="text-sm"><span>13:26:43 PM</span> / <span>3.105 secs</span></p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<div class='float-right'><span class='badge badge-default'>#test-id=3</span></div>
+<h5 class="test-status text-pass"> verifyOtpServiceTest</h5>
+<span class='badge badge-success'>06.24.2024 13:26:43</span>
+<span class='badge badge-danger'>06.24.2024 13:26:46</span>
+<span class='badge badge-default'>3.105 secs</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default"> functionalUseCase</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:26:43 PM</td>
+        <td>
+          Generating the OTP for the user with invalid token
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:26:46 PM</td>
+        <td>
+          status code --> 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:26:46 PM</td>
+        <td>
+          response---->{
+    "responseString": "OTP Verified Successfully!",
+    "jwtToken": "eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MTkyMTU4MDYsImV4cCI6MTcxOTIxOTQwNiwic3ViIjoiYmJmN2RiMGUtNWI2Ni00MDc5LWE5NjEtNjYwMTYzZGRkYjQzIiwibGlua1Rva2VuIjoiMzNkNTM1MzkzYzUyNDg3ZDVjMTdlYjJjNTQwYTJkZmUiLCJyZWZyZXNoVG9rZW4iOiI4ODY3ZjA1MzE0OTE1YzU1YjdhYjI1NWI2YzhlMzdjNiIsImVsaXRlTWVtYmVyIjpmYWxzZX0.zz36xB9kqcWi4RFKbNECOrahD3lrzqiHcDd75HbBfrw",
+    "newUserLogin": false,
+    "actionRequestId": "eyJhbGciOiJub25lIn0.eyJpYXQiOjE3MTkyMTU4MDYsImV4cCI6MTcxOTIxNjEwNn0.",
+    "request_id": "6af374cfd6a4d1f6",
+    "success": true
+}
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag="functionalUseCase"
+          device="">
+          <div class="status-avatar pass-bg">
+            <i class="fa fa-check text-white"></i>
+          </div>
+          <div class="test-detail">
+            <span class="meta text-white badge badge-sm"></span>
+            <p class="name"> validate update user servcice</p>
+            <p class="text-sm"><span>13:26:46 PM</span> / <span>1.51 secs</span></p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<div class='float-right'><span class='badge badge-default'>#test-id=4</span></div>
+<h5 class="test-status text-pass"> validate update user servcice</h5>
+<span class='badge badge-success'>06.24.2024 13:26:46</span>
+<span class='badge badge-danger'>06.24.2024 13:26:48</span>
+<span class='badge badge-default'>1.51 secs</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default"> functionalUseCase</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:26:46 PM</td>
+        <td>
+          Validating the update user Service 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:26:48 PM</td>
+        <td>
+          status code --> 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:26:48 PM</td>
+        <td>
+          response---->{
+    "email": "Neo48841bank@yahoo.com",
+    "request_id": "edab04b114a9e7fe",
+    "success": true
+}
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag="functionalUseCase"
+          device="">
+          <div class="status-avatar pass-bg">
+            <i class="fa fa-check text-white"></i>
+          </div>
+          <div class="test-detail">
+            <span class="meta text-white badge badge-sm"></span>
+            <p class="name"> validateAdressServiceTest</p>
+            <p class="text-sm"><span>13:26:48 PM</span> / <span>1.746 secs</span></p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<div class='float-right'><span class='badge badge-default'>#test-id=5</span></div>
+<h5 class="test-status text-pass"> validateAdressServiceTest</h5>
+<span class='badge badge-success'>06.24.2024 13:26:48</span>
+<span class='badge badge-danger'>06.24.2024 13:26:50</span>
+<span class='badge badge-default'>1.746 secs</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default"> functionalUseCase</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:26:48 PM</td>
+        <td>
+          Validating the Address Service 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:26:50 PM</td>
+        <td>
+          status code --> 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:26:50 PM</td>
+        <td>
+          response---->{
+    "validated": true,
+    "errorMessage": "",
+    "requestId": "355ea437acd8aeda",
+    "success": true
+}
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag="functionalUseCase"
+          device="">
+          <div class="status-avatar pass-bg">
+            <i class="fa fa-check text-white"></i>
+          </div>
+          <div class="test-detail">
+            <span class="meta text-white badge badge-sm"></span>
+            <p class="name"> validate SSN servcice</p>
+            <p class="text-sm"><span>13:26:50 PM</span> / <span>1.469 secs</span></p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<div class='float-right'><span class='badge badge-default'>#test-id=6</span></div>
+<h5 class="test-status text-pass"> validate SSN servcice</h5>
+<span class='badge badge-success'>06.24.2024 13:26:50</span>
+<span class='badge badge-danger'>06.24.2024 13:26:51</span>
+<span class='badge badge-default'>1.469 secs</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default"> functionalUseCase</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:26:50 PM</td>
+        <td>
+          Validating the SSN Service 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:26:51 PM</td>
+        <td>
+          status code --> 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:26:51 PM</td>
+        <td>
+          response---->{
+    "validated": true,
+    "errorMessage": "",
+    "requestId": "d1448d057318f089",
+    "success": true
+}
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag="functionalUseCase"
+          device="">
+          <div class="status-avatar pass-bg">
+            <i class="fa fa-check text-white"></i>
+          </div>
+          <div class="test-detail">
+            <span class="meta text-white badge badge-sm"></span>
+            <p class="name"> validationOfDocumentApi</p>
+            <p class="text-sm"><span>13:26:51 PM</span> / <span>1.625 secs</span></p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<div class='float-right'><span class='badge badge-default'>#test-id=7</span></div>
+<h5 class="test-status text-pass"> validationOfDocumentApi</h5>
+<span class='badge badge-success'>06.24.2024 13:26:51</span>
+<span class='badge badge-danger'>06.24.2024 13:26:53</span>
+<span class='badge badge-default'>1.625 secs</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default"> functionalUseCase</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:26:51 PM</td>
+        <td>
+          Validation of document upload api
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:26:53 PM</td>
+        <td>
+          message from document api ---->Updated document details successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:26:53 PM</td>
+        <td>
+          status code --> 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:26:53 PM</td>
+        <td>
+          response---->{
+    "message": "Updated document details successfully",
+    "request_id": "3e6a89272d4149e1",
+    "document_ref_id": "920725a9-e705-4ca8-8d8f-77ec0569c871",
+    "success": true
+}
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag="functionalUseCase"
+          device="">
+          <div class="status-avatar pass-bg">
+            <i class="fa fa-check text-white"></i>
+          </div>
+          <div class="test-detail">
+            <span class="meta text-white badge badge-sm"></span>
+            <p class="name"> validationOfLayer2Api</p>
+            <p class="text-sm"><span>13:26:53 PM</span> / <span>0 secs</span></p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<div class='float-right'><span class='badge badge-default'>#test-id=8</span></div>
+<h5 class="test-status text-pass"> validationOfLayer2Api</h5>
+<span class='badge badge-success'>06.24.2024 13:26:53</span>
+<span class='badge badge-danger'>06.24.2024 13:26:53</span>
+<span class='badge badge-default'>0 secs</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default"> functionalUseCase</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:26:53 PM</td>
+        <td>
+          Validation of layer2 Api
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag="functionalUseCase"
+          device="">
+          <div class="status-avatar pass-bg">
+            <i class="fa fa-check text-white"></i>
+          </div>
+          <div class="test-detail">
+            <span class="meta text-white badge badge-sm"></span>
+            <p class="name"> validationOfGetKycStatusService</p>
+            <p class="text-sm"><span>13:26:57 PM</span> / <span>1.605 secs</span></p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<div class='float-right'><span class='badge badge-default'>#test-id=9</span></div>
+<h5 class="test-status text-pass"> validationOfGetKycStatusService</h5>
+<span class='badge badge-success'>06.24.2024 13:26:57</span>
+<span class='badge badge-danger'>06.24.2024 13:26:59</span>
+<span class='badge badge-default'>1.605 secs</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default"> functionalUseCase</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:26:57 PM</td>
+        <td>
+          verify of kyc status service 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:26:59 PM</td>
+        <td>
+          status code --> 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:26:59 PM</td>
+        <td>
+          response---->{
+    "request_id": "561721edd7f707c2",
+    "documents": [
+        {
+            "status": "SUBMITTED",
+            "document_type": "ACCOUNT_AGREEMENT"
+        },
+        {
+            "status": "UPLOADED",
+            "document_type": "DRIVERS_LICENCE_BACK"
+        },
+        {
+            "status": "UPLOADED",
+            "document_type": "DRIVERS_LICENCE_FRONT"
+        }
+    ],
+    "kyc_status": "VERIFIED",
+    "required_documents": [
+        "DRIVERS_LICENSE",
+        "IDENTITY",
+        "PASSPORT"
+    ],
+    "video_auth_required": false,
+    "retry_attempt": 0,
+    "success": true
+}
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag="functionalUseCase"
+          device="">
+          <div class="status-avatar pass-bg">
+            <i class="fa fa-check text-white"></i>
+          </div>
+          <div class="test-detail">
+            <span class="meta text-white badge badge-sm"></span>
+            <p class="name">fetching the fx hold rate for initiate transaction</p>
+            <p class="text-sm"><span>13:26:59 PM</span> / <span>1.571 secs</span></p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<div class='float-right'><span class='badge badge-default'>#test-id=10</span></div>
+<h5 class="test-status text-pass">fetching the fx hold rate for initiate transaction</h5>
+<span class='badge badge-success'>06.24.2024 13:26:59</span>
+<span class='badge badge-danger'>06.24.2024 13:27:01</span>
+<span class='badge badge-default'>1.571 secs</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default"> functionalUseCase</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:26:59 PM</td>
+        <td>
+          fetching the fx hold rate for initiate transaction
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:27:01 PM</td>
+        <td>
+          hold id from fx exchange rate ---> 7a96261d-4de4-4314-af0b-e39c86607438
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:27:01 PM</td>
+        <td>
+          {"maxUsersAllowed":10000,"campaignActive":true,"campaign_id":"46","exchange_rates":{"current_exchange_rate":0.00,"effective_exchange_rate":10.00,"display_current_exchange_rate":"0","display_effective_exchange_rate":"10","exchange_rate_currency":"₹","min_amount_transaction":null,"max_amount_transaction":null,"campaign_id":"46","promotional_applicable":false},"promotional_exchange_rate_applicable":true,"min_amount_transaction":0,"max_amount_transaction":5000.00,"transaction_default_value":100,"display_min_amount_transaction":"0","display_max_amount_transaction":"5000","display_transaction_default_value":"100","transaction_fee":1.0,"applicable_transaction_fee":0.0,"display_transaction_fee":"1","display_applicable_transaction_fee":"0","instant_transfer_active":false,"fx_hold_id":"7a96261d-4de4-4314-af0b-e39c86607438","currency":"$","transaction_wise_fx_rate":{"1":{"current_exchange_rate":0.00,"effective_exchange_rate":10.00,"display_current_exchange_rate":"0","display_effective_exchange_rate":"10","exchange_rate_currency":"$","min_amount_transaction":0,"max_amount_transaction":500,"campaign_id":"46","promotional_applicable":false},"2":{"current_exchange_rate":0.00,"effective_exchange_rate":86.00,"display_current_exchange_rate":"0","display_effective_exchange_rate":"86","exchange_rate_currency":"$","min_amount_transaction":0,"max_amount_transaction":500,"campaign_id":"45","promotional_applicable":true},"3":{"current_exchange_rate":0.00,"effective_exchange_rate":0.20,"display_current_exchange_rate":"0","display_effective_exchange_rate":"0.20","exchange_rate_currency":"$","min_amount_transaction":0,"max_amount_transaction":5000,"campaign_id":"47","promotional_applicable":false}},"success":true}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:27:01 PM</td>
+        <td>
+          response---->{
+    "maxUsersAllowed": 10000,
+    "campaignActive": true,
+    "campaign_id": "46",
+    "exchange_rates": {
+        "current_exchange_rate": 0.00,
+        "effective_exchange_rate": 10.00,
+        "display_current_exchange_rate": "0",
+        "display_effective_exchange_rate": "10",
+        "exchange_rate_currency": "₹",
+        "min_amount_transaction": null,
+        "max_amount_transaction": null,
+        "campaign_id": "46",
+        "promotional_applicable": false
+    },
+    "promotional_exchange_rate_applicable": true,
+    "min_amount_transaction": 0,
+    "max_amount_transaction": 5000.00,
+    "transaction_default_value": 100,
+    "display_min_amount_transaction": "0",
+    "display_max_amount_transaction": "5000",
+    "display_transaction_default_value": "100",
+    "transaction_fee": 1.0,
+    "applicable_transaction_fee": 0.0,
+    "display_transaction_fee": "1",
+    "display_applicable_transaction_fee": "0",
+    "instant_transfer_active": false,
+    "fx_hold_id": "7a96261d-4de4-4314-af0b-e39c86607438",
+    "currency": "$",
+    "transaction_wise_fx_rate": {
+        "1": {
+            "current_exchange_rate": 0.00,
+            "effective_exchange_rate": 10.00,
+            "display_current_exchange_rate": "0",
+            "display_effective_exchange_rate": "10",
+            "exchange_rate_currency": "$",
+            "min_amount_transaction": 0,
+            "max_amount_transaction": 500,
+            "campaign_id": "46",
+            "promotional_applicable": false
+        },
+        "2": {
+            "current_exchange_rate": 0.00,
+            "effective_exchange_rate": 86.00,
+            "display_current_exchange_rate": "0",
+            "display_effective_exchange_rate": "86",
+            "exchange_rate_currency": "$",
+            "min_amount_transaction": 0,
+            "max_amount_transaction": 500,
+            "campaign_id": "45",
+            "promotional_applicable": true
+        },
+        "3": {
+            "current_exchange_rate": 0.00,
+            "effective_exchange_rate": 0.20,
+            "display_current_exchange_rate": "0",
+            "display_effective_exchange_rate": "0.20",
+            "exchange_rate_currency": "$",
+            "min_amount_transaction": 0,
+            "max_amount_transaction": 5000,
+            "campaign_id": "47",
+            "promotional_applicable": false
+        }
+    },
+    "success": true
+}
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="11"
+          author=""
+          tag="functionalUseCase"
+          device="">
+          <div class="status-avatar fail-bg">
+            <i class="fa fa-times text-white"></i>
+          </div>
+          <div class="test-detail">
+            <span class="meta text-white badge badge-sm"></span>
+            <p class="name"> Validation of addBeneficiaryTest</p>
+            <p class="text-sm"><span>13:27:01 PM</span> / <span>5.564 secs</span></p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<div class='float-right'><span class='badge badge-default'>#test-id=11</span></div>
+<h5 class="test-status text-fail"> Validation of addBeneficiaryTest</h5>
+<span class='badge badge-success'>06.24.2024 13:27:01</span>
+<span class='badge badge-danger'>06.24.2024 13:27:06</span>
+<span class='badge badge-default'>5.564 secs</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default"> functionalUseCase</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:27:06 PM</td>
+        <td>
+          test failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:27:06 PM</td>
+        <td>
+          Validation of addBeneficiaryTest
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:27:06 PM</td>
+        <td>
+          status code --> 400
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:27:06 PM</td>
+        <td>
+          failed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author=""
+          tag="functionalUseCase"
+          device="">
+          <div class="status-avatar pass-bg">
+            <i class="fa fa-check text-white"></i>
+          </div>
+          <div class="test-detail">
+            <span class="meta text-white badge badge-sm"></span>
+            <p class="name"> Validation of getUserBeneficiaryListTest</p>
+            <p class="text-sm"><span>13:27:06 PM</span> / <span>1.495 secs</span></p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<div class='float-right'><span class='badge badge-default'>#test-id=12</span></div>
+<h5 class="test-status text-pass"> Validation of getUserBeneficiaryListTest</h5>
+<span class='badge badge-success'>06.24.2024 13:27:06</span>
+<span class='badge badge-danger'>06.24.2024 13:27:08</span>
+<span class='badge badge-default'>1.495 secs</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default"> functionalUseCase</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:27:08 PM</td>
+        <td>
+          {"request_id":"810502576e8841e1","beneficiary_account_details_list":[],"success":true}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:27:08 PM</td>
+        <td>
+          Validation of getUserBeneficiaryListTest
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:27:08 PM</td>
+        <td>
+          status code --> 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:27:08 PM</td>
+        <td>
+          response---->{
+    "request_id": "810502576e8841e1",
+    "beneficiary_account_details_list": [
+        
+    ],
+    "success": true
+}
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="13"
+          author=""
+          tag="functionalUseCase"
+          device="">
+          <div class="status-avatar pass-bg">
+            <i class="fa fa-check text-white"></i>
+          </div>
+          <div class="test-detail">
+            <span class="meta text-white badge badge-sm"></span>
+            <p class="name"> Validation of getPaymentReasonsDataTest</p>
+            <p class="text-sm"><span>13:27:09 PM</span> / <span>0 secs</span></p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<div class='float-right'><span class='badge badge-default'>#test-id=13</span></div>
+<h5 class="test-status text-pass"> Validation of getPaymentReasonsDataTest</h5>
+<span class='badge badge-success'>06.24.2024 13:27:09</span>
+<span class='badge badge-danger'>06.24.2024 13:27:09</span>
+<span class='badge badge-default'>0 secs</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default"> functionalUseCase</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:27:09 PM</td>
+        <td>
+          Validation of getPaymentReasonsDataTest
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:27:09 PM</td>
+        <td>
+          status code --> 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:27:09 PM</td>
+        <td>
+          response---->{
+    "request_id": "b48e91c06056dbbe",
+    "payment_reasons_list": [
+        {
+            "code": "IR001",
+            "reason_description": "Transfer to own account"
+        },
+        {
+            "code": "IR002",
+            "reason_description": "Family Maintenance"
+        }
+    ],
+    "success": true
+}
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="14"
+          author=""
+          tag="functionalUseCase"
+          device="">
+          <div class="status-avatar pass-bg">
+            <i class="fa fa-check text-white"></i>
+          </div>
+          <div class="test-detail">
+            <span class="meta text-white badge badge-sm"></span>
+            <p class="name">Validation of getFundingSourceDataTest</p>
+            <p class="text-sm"><span>13:27:09 PM</span> / <span>3.014 secs</span></p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<div class='float-right'><span class='badge badge-default'>#test-id=14</span></div>
+<h5 class="test-status text-pass">Validation of getFundingSourceDataTest</h5>
+<span class='badge badge-success'>06.24.2024 13:27:09</span>
+<span class='badge badge-danger'>06.24.2024 13:27:12</span>
+<span class='badge badge-default'>3.014 secs</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default"> functionalUseCase</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:27:09 PM</td>
+        <td>
+          Validation of getFundingSourceDataTest
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:27:12 PM</td>
+        <td>
+          response of getFundingSourceData{"bank_accounts":[{"name":"Savings","official_name":"Plaid savings","account_id":"aqBGdDxdM9FkgMwmoBPMSnX1GJ1DEEFZmL5XM","account_type":"depository","account_subtype":"savings","item_id":"RpQAVnmVroUDkl9qeWmlcXLny1bXRgCR1jb3b","selected":true,"mask":"9013","is_invalid":false,"ins_name":"Discover","image":"/images/discover.png","auth_supported":true,"vendor":"plaid","payment_instrument_type":"ACH"},{"name":"Checking","official_name":"Plaid checking","account_id":"dzD9db4dp8UM9QgjbmNQSnVDAwDoeeFJ1eEXK","account_type":"depository","account_subtype":"checking","item_id":"RpQAVnmVroUDkl9qeWmlcXLny1bXRgCR1jb3b","selected":false,"mask":"0013","is_invalid":false,"ins_name":"Discover","image":"/images/discover.png","auth_supported":true,"vendor":"plaid","payment_instrument_type":"ACH"}],"message":null,"error":null,"success":null,"pending":false,"success":true}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:27:12 PM</td>
+        <td>
+          Response of getFundingSourceData service :{"bank_accounts":[{"name":"Savings","official_name":"Plaid savings","account_id":"aqBGdDxdM9FkgMwmoBPMSnX1GJ1DEEFZmL5XM","account_type":"depository","account_subtype":"savings","item_id":"RpQAVnmVroUDkl9qeWmlcXLny1bXRgCR1jb3b","selected":true,"mask":"9013","is_invalid":false,"ins_name":"Discover","image":"/images/discover.png","auth_supported":true,"vendor":"plaid","payment_instrument_type":"ACH"},{"name":"Checking","official_name":"Plaid checking","account_id":"dzD9db4dp8UM9QgjbmNQSnVDAwDoeeFJ1eEXK","account_type":"depository","account_subtype":"checking","item_id":"RpQAVnmVroUDkl9qeWmlcXLny1bXRgCR1jb3b","selected":false,"mask":"0013","is_invalid":false,"ins_name":"Discover","image":"/images/discover.png","auth_supported":true,"vendor":"plaid","payment_instrument_type":"ACH"}],"message":null,"error":null,"success":null,"pending":false,"success":true}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:27:12 PM</td>
+        <td>
+          status code --> 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:27:12 PM</td>
+        <td>
+          response---->{
+    "bank_accounts": [
+        {
+            "name": "Savings",
+            "official_name": "Plaid savings",
+            "account_id": "aqBGdDxdM9FkgMwmoBPMSnX1GJ1DEEFZmL5XM",
+            "account_type": "depository",
+            "account_subtype": "savings",
+            "item_id": "RpQAVnmVroUDkl9qeWmlcXLny1bXRgCR1jb3b",
+            "selected": true,
+            "mask": "9013",
+            "is_invalid": false,
+            "ins_name": "Discover",
+            "image": "/images/discover.png",
+            "auth_supported": true,
+            "vendor": "plaid",
+            "payment_instrument_type": "ACH"
+        },
+        {
+            "name": "Checking",
+            "official_name": "Plaid checking",
+            "account_id": "dzD9db4dp8UM9QgjbmNQSnVDAwDoeeFJ1eEXK",
+            "account_type": "depository",
+            "account_subtype": "checking",
+            "item_id": "RpQAVnmVroUDkl9qeWmlcXLny1bXRgCR1jb3b",
+            "selected": false,
+            "mask": "0013",
+            "is_invalid": false,
+            "ins_name": "Discover",
+            "image": "/images/discover.png",
+            "auth_supported": true,
+            "vendor": "plaid",
+            "payment_instrument_type": "ACH"
+        }
+    ],
+    "message": null,
+    "error": null,
+    "success": null,
+    "pending": false,
+    "success": true
+}
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="15"
+          author=""
+          tag="functionalUseCase"
+          device="">
+          <div class="status-avatar pass-bg">
+            <i class="fa fa-check text-white"></i>
+          </div>
+          <div class="test-detail">
+            <span class="meta text-white badge badge-sm"></span>
+            <p class="name">Validation of getRequestIdTest</p>
+            <p class="text-sm"><span>13:27:14 PM</span> / <span>0.001 secs</span></p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<div class='float-right'><span class='badge badge-default'>#test-id=15</span></div>
+<h5 class="test-status text-pass">Validation of getRequestIdTest</h5>
+<span class='badge badge-success'>06.24.2024 13:27:14</span>
+<span class='badge badge-danger'>06.24.2024 13:27:14</span>
+<span class='badge badge-default'>0.001 secs</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default"> functionalUseCase</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:27:14 PM</td>
+        <td>
+          Validation of getRequestIdTest
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:27:14 PM</td>
+        <td>
+          status code --> 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:27:14 PM</td>
+        <td>
+          response---->{
+    "request_id": "3c278354-bdde-4820-846a-8a7e64b7d410",
+    "success": true
+}
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="16"
+          author=""
+          tag="functionalUseCase"
+          device="">
+          <div class="status-avatar pass-bg">
+            <i class="fa fa-check text-white"></i>
+          </div>
+          <div class="test-detail">
+            <span class="meta text-white badge badge-sm"></span>
+            <p class="name">Validation of transactionForAbountAccountTest</p>
+            <p class="text-sm"><span>13:27:14 PM</span> / <span>1.528 secs</span></p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<div class='float-right'><span class='badge badge-default'>#test-id=16</span></div>
+<h5 class="test-status text-pass">Validation of transactionForAbountAccountTest</h5>
+<span class='badge badge-success'>06.24.2024 13:27:14</span>
+<span class='badge badge-danger'>06.24.2024 13:27:15</span>
+<span class='badge badge-default'>1.528 secs</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default"> functionalUseCase</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:27:14 PM</td>
+        <td>
+          Validation of transactionForAbountAccountTest
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:27:15 PM</td>
+        <td>
+          trasnaction id -----------> null
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:27:15 PM</td>
+        <td>
+          Response of the transactionPerPage service :{"transactions":[],"success":true}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:27:15 PM</td>
+        <td>
+          status code --> 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:27:15 PM</td>
+        <td>
+          response---->{
+    "transactions": [
+        
+    ],
+    "success": true
+}
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="17"
+          author=""
+          tag="functionalUseCase"
+          device="">
+          <div class="status-avatar pass-bg">
+            <i class="fa fa-check text-white"></i>
+          </div>
+          <div class="test-detail">
+            <span class="meta text-white badge badge-sm"></span>
+            <p class="name">Validation of transactionHistoryCheckingTest</p>
+            <p class="text-sm"><span>13:27:15 PM</span> / <span>18.66 secs</span></p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<div class='float-right'><span class='badge badge-default'>#test-id=17</span></div>
+<h5 class="test-status text-pass">Validation of transactionHistoryCheckingTest</h5>
+<span class='badge badge-success'>06.24.2024 13:27:15</span>
+<span class='badge badge-danger'>06.24.2024 13:27:34</span>
+<span class='badge badge-default'>18.66 secs</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default"> functionalUseCase</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:27:15 PM</td>
+        <td>
+          Validation of transactionHistoryCheckingTest
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:27:34 PM</td>
+        <td>
+          successfully verified the recent txn done from funding source in transaction history
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:27:34 PM</td>
+        <td>
+          Response of transactionHistoryChecking service :{"transactions":[{"beneficiary_name":"ATISH KUMAR MAURYA","transaction_ref_id":"1fbf3d4a-3a6d-43af-95b8-bb2da9276c11","transaction_tracking_id":"1893018595","transaction_status":"FAILED","transaction_delivery":"NORMAL","transaction_date":1718963313000,"amount":"$100.00","transfer_type":"standard","total_destination_amount":"₹1,000.00","payment_method":null,"transactions_split":[{"source_amount":"$100.00","destination_amount":"₹1,000.00","fx_rate":10.00,"transfer_fees":"$0.00","transaction_delivery_fee":"$0.00"}],"status_timelines":[{"status":"REQUEST_RECEIVED","date":1718963313000},{"status":"INITIATED","date":1718963400000},{"status":"PROCESSED","date":1718963694000}],"min_delivery_days":20,"max_delivery_days":22,"failure_reason":"INTERNAL_SERVER_ERROR","payment_reason":"Family Maintenance","recipient_account":"********6928","delivery_method":"Account Transfer","amount_breakup":null},{"beneficiary_name":"VIKAS KUMAR","transaction_ref_id":"4bb3777b-3bc6-4b17-90ef-266d92bba8c2","transaction_tracking_id":"3465595022","transaction_status":"FAILED","transaction_delivery":"NORMAL","transaction_date":1718963204000,"amount":"$100.00","transfer_type":"standard","total_destination_amount":"₹1,000.00","payment_method":null,"transactions_split":[{"source_amount":"$100.00","destination_amount":"₹1,000.00","fx_rate":10.00,"transfer_fees":"$0.00","transaction_delivery_fee":"$0.00"}],"status_timelines":[{"status":"REQUEST_RECEIVED","date":1718963204000},{"status":"INITIATED","date":1718963280000},{"status":"PROCESSED","date":1718963694000}],"min_delivery_days":20,"max_delivery_days":22,"failure_reason":"INTERNAL_SERVER_ERROR","payment_reason":"Family Maintenance","recipient_account":"************5349","delivery_method":"Account Transfer","amount_breakup":null},{"beneficiary_name":"ATISH KUMAR MAURYA","transaction_ref_id":"f5e1d8fd-561c-49ca-a7d1-002de3656c3c","transaction_tracking_id":"1710411089","transaction_status":"FAILED","transaction_delivery":"NORMAL","transaction_date":1718963184000,"amount":"$100.00","transfer_type":"standard","total_destination_amount":"₹1,000.00","payment_method":null,"transactions_split":[{"source_amount":"$100.00","destination_amount":"₹1,000.00","fx_rate":10.00,"transfer_fees":"$0.00","transaction_delivery_fee":"$0.00"}],"status_timelines":[{"status":"REQUEST_RECEIVED","date":1718963184000},{"status":"INITIATED","date":1718963280000},{"status":"PROCESSED","date":1718963693000}],"min_delivery_days":20,"max_delivery_days":22,"failure_reason":"INTERNAL_SERVER_ERROR","payment_reason":"Transfer to own account","recipient_account":"********6928","delivery_method":"Account Transfer","amount_breakup":null},{"beneficiary_name":"ATISH KUMAR MAURYA","transaction_ref_id":"e2017c10-5055-4dfc-a8f1-98a88dac771f","transaction_tracking_id":"3832059156","transaction_status":"FAILED","transaction_delivery":"NORMAL","transaction_date":1718961147000,"amount":"$100.00","transfer_type":"standard","total_destination_amount":"₹1,000.00","payment_method":null,"transactions_split":[{"source_amount":"$100.00","destination_amount":"₹1,000.00","fx_rate":10.00,"transfer_fees":"$0.00","transaction_delivery_fee":"$0.00"}],"status_timelines":[{"status":"REQUEST_RECEIVED","date":1718961147000},{"status":"INITIATED","date":1718961240000},{"status":"PROCESSED","date":1718961483000}],"min_delivery_days":20,"max_delivery_days":22,"failure_reason":"INTERNAL_SERVER_ERROR","payment_reason":"Utility Bills ","recipient_account":"********6928","delivery_method":"Account Transfer","amount_breakup":null},{"beneficiary_name":"VIKAS KUMAR","transaction_ref_id":"d7afb831-3641-4fb7-b48e-931a9ca4aa84","transaction_tracking_id":"2970426186","transaction_status":"FAILED","transaction_delivery":"NORMAL","transaction_date":1718873455000,"amount":"$500.00","transfer_type":"standard","total_destination_amount":"₹5,000.00","payment_method":null,"transactions_split":[{"source_amount":"$500.00","destination_amount":"₹5,000.00","fx_rate":10.00,"transfer_fees":"$0.00","transaction_delivery_fee":"$0.00"}],"status_timelines":[{"status":"REQUEST_RECEIVED","date":1718873455000},{"status":"INITIATED","date":1718873520000},{"status":"PROCESSED","date":1718874004000}],"min_delivery_days":20,"max_delivery_days":22,"failure_reason":"INTERNAL_SERVER_ERROR","payment_reason":"Medical Treatment","recipient_account":"************5349","delivery_method":"Account Transfer","amount_breakup":null}],"success":true}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:27:34 PM</td>
+        <td>
+          status code --> 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:27:34 PM</td>
+        <td>
+          response---->{
+    "transactions": [
+        {
+            "beneficiary_name": "ATISH KUMAR MAURYA",
+            "transaction_ref_id": "1fbf3d4a-3a6d-43af-95b8-bb2da9276c11",
+            "transaction_tracking_id": "1893018595",
+            "transaction_status": "FAILED",
+            "transaction_delivery": "NORMAL",
+            "transaction_date": 1718963313000,
+            "amount": "$100.00",
+            "transfer_type": "standard",
+            "total_destination_amount": "₹1,000.00",
+            "payment_method": null,
+            "transactions_split": [
+                {
+                    "source_amount": "$100.00",
+                    "destination_amount": "₹1,000.00",
+                    "fx_rate": 10.00,
+                    "transfer_fees": "$0.00",
+                    "transaction_delivery_fee": "$0.00"
+                }
+            ],
+            "status_timelines": [
+                {
+                    "status": "REQUEST_RECEIVED",
+                    "date": 1718963313000
+                },
+                {
+                    "status": "INITIATED",
+                    "date": 1718963400000
+                },
+                {
+                    "status": "PROCESSED",
+                    "date": 1718963694000
+                }
+            ],
+            "min_delivery_days": 20,
+            "max_delivery_days": 22,
+            "failure_reason": "INTERNAL_SERVER_ERROR",
+            "payment_reason": "Family Maintenance",
+            "recipient_account": "********6928",
+            "delivery_method": "Account Transfer",
+            "amount_breakup": null
+        },
+        {
+            "beneficiary_name": "VIKAS KUMAR",
+            "transaction_ref_id": "4bb3777b-3bc6-4b17-90ef-266d92bba8c2",
+            "transaction_tracking_id": "3465595022",
+            "transaction_status": "FAILED",
+            "transaction_delivery": "NORMAL",
+            "transaction_date": 1718963204000,
+            "amount": "$100.00",
+            "transfer_type": "standard",
+            "total_destination_amount": "₹1,000.00",
+            "payment_method": null,
+            "transactions_split": [
+                {
+                    "source_amount": "$100.00",
+                    "destination_amount": "₹1,000.00",
+                    "fx_rate": 10.00,
+                    "transfer_fees": "$0.00",
+                    "transaction_delivery_fee": "$0.00"
+                }
+            ],
+            "status_timelines": [
+                {
+                    "status": "REQUEST_RECEIVED",
+                    "date": 1718963204000
+                },
+                {
+                    "status": "INITIATED",
+                    "date": 1718963280000
+                },
+                {
+                    "status": "PROCESSED",
+                    "date": 1718963694000
+                }
+            ],
+            "min_delivery_days": 20,
+            "max_delivery_days": 22,
+            "failure_reason": "INTERNAL_SERVER_ERROR",
+            "payment_reason": "Family Maintenance",
+            "recipient_account": "************5349",
+            "delivery_method": "Account Transfer",
+            "amount_breakup": null
+        },
+        {
+            "beneficiary_name": "ATISH KUMAR MAURYA",
+            "transaction_ref_id": "f5e1d8fd-561c-49ca-a7d1-002de3656c3c",
+            "transaction_tracking_id": "1710411089",
+            "transaction_status": "FAILED",
+            "transaction_delivery": "NORMAL",
+            "transaction_date": 1718963184000,
+            "amount": "$100.00",
+            "transfer_type": "standard",
+            "total_destination_amount": "₹1,000.00",
+            "payment_method": null,
+            "transactions_split": [
+                {
+                    "source_amount": "$100.00",
+                    "destination_amount": "₹1,000.00",
+                    "fx_rate": 10.00,
+                    "transfer_fees": "$0.00",
+                    "transaction_delivery_fee": "$0.00"
+                }
+            ],
+            "status_timelines": [
+                {
+                    "status": "REQUEST_RECEIVED",
+                    "date": 1718963184000
+                },
+                {
+                    "status": "INITIATED",
+                    "date": 1718963280000
+                },
+                {
+                    "status": "PROCESSED",
+                    "date": 1718963693000
+                }
+            ],
+            "min_delivery_days": 20,
+            "max_delivery_days": 22,
+            "failure_reason": "INTERNAL_SERVER_ERROR",
+            "payment_reason": "Transfer to own account",
+            "recipient_account": "********6928",
+            "delivery_method": "Account Transfer",
+            "amount_breakup": null
+        },
+        {
+            "beneficiary_name": "ATISH KUMAR MAURYA",
+            "transaction_ref_id": "e2017c10-5055-4dfc-a8f1-98a88dac771f",
+            "transaction_tracking_id": "3832059156",
+            "transaction_status": "FAILED",
+            "transaction_delivery": "NORMAL",
+            "transaction_date": 1718961147000,
+            "amount": "$100.00",
+            "transfer_type": "standard",
+            "total_destination_amount": "₹1,000.00",
+            "payment_method": null,
+            "transactions_split": [
+                {
+                    "source_amount": "$100.00",
+                    "destination_amount": "₹1,000.00",
+                    "fx_rate": 10.00,
+                    "transfer_fees": "$0.00",
+                    "transaction_delivery_fee": "$0.00"
+                }
+            ],
+            "status_timelines": [
+                {
+                    "status": "REQUEST_RECEIVED",
+                    "date": 1718961147000
+                },
+                {
+                    "status": "INITIATED",
+                    "date": 1718961240000
+                },
+                {
+                    "status": "PROCESSED",
+                    "date": 1718961483000
+                }
+            ],
+            "min_delivery_days": 20,
+            "max_delivery_days": 22,
+            "failure_reason": "INTERNAL_SERVER_ERROR",
+            "payment_reason": "Utility Bills ",
+            "recipient_account": "********6928",
+            "delivery_method": "Account Transfer",
+            "amount_breakup": null
+        },
+        {
+            "beneficiary_name": "VIKAS KUMAR",
+            "transaction_ref_id": "d7afb831-3641-4fb7-b48e-931a9ca4aa84",
+            "transaction_tracking_id": "2970426186",
+            "transaction_status": "FAILED",
+            "transaction_delivery": "NORMAL",
+            "transaction_date": 1718873455000,
+            "amount": "$500.00",
+            "transfer_type": "standard",
+            "total_destination_amount": "₹5,000.00",
+            "payment_method": null,
+            "transactions_split": [
+                {
+                    "source_amount": "$500.00",
+                    "destination_amount": "₹5,000.00",
+                    "fx_rate": 10.00,
+                    "transfer_fees": "$0.00",
+                    "transaction_delivery_fee": "$0.00"
+                }
+            ],
+            "status_timelines": [
+                {
+                    "status": "REQUEST_RECEIVED",
+                    "date": 1718873455000
+                },
+                {
+                    "status": "INITIATED",
+                    "date": 1718873520000
+                },
+                {
+                    "status": "PROCESSED",
+                    "date": 1718874004000
+                }
+            ],
+            "min_delivery_days": 20,
+            "max_delivery_days": 22,
+            "failure_reason": "INTERNAL_SERVER_ERROR",
+            "payment_reason": "Medical Treatment",
+            "recipient_account": "************5349",
+            "delivery_method": "Account Transfer",
+            "amount_breakup": null
+        }
+    ],
+    "success": true
+}
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="18"
+          author=""
+          tag="functionalUseCase"
+          device="">
+          <div class="status-avatar fail-bg">
+            <i class="fa fa-times text-white"></i>
+          </div>
+          <div class="test-detail">
+            <span class="meta text-white badge badge-sm"></span>
+            <p class="name">Validation of initaiteTransactionV2Test</p>
+            <p class="text-sm"><span>13:27:34 PM</span> / <span>27.468 secs</span></p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<div class='float-right'><span class='badge badge-default'>#test-id=18</span></div>
+<h5 class="test-status text-fail">Validation of initaiteTransactionV2Test</h5>
+<span class='badge badge-success'>06.24.2024 13:27:34</span>
+<span class='badge badge-danger'>06.24.2024 13:28:01</span>
+<span class='badge badge-default'>27.468 secs</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default"> functionalUseCase</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:27:34 PM</td>
+        <td>
+          Validation of transactionWithCMAFundingSource
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:27:46 PM</td>
+        <td>
+          response of getFundingSourceData{"bank_accounts":[{"name":"Checking","official_name":"Plaid checking","account_id":"MMk1ad4WwoCpyDnMm4GWT1AJ1A3RQaULmkyVN","account_type":"depository","account_subtype":"checking","item_id":"nVWXqxDLpwHbNAqDZ9JyFlmvkNjBwjt6a4Qqa","selected":true,"mask":"0013","is_invalid":false,"ins_name":"Discover","image":"/images/discover.png","auth_supported":true,"vendor":"plaid","payment_instrument_type":"ACH"}],"message":null,"error":null,"success":null,"pending":false,"success":true}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:27:46 PM</td>
+        <td>
+          Response of getFundingSourceData service :{"bank_accounts":[{"name":"Checking","official_name":"Plaid checking","account_id":"MMk1ad4WwoCpyDnMm4GWT1AJ1A3RQaULmkyVN","account_type":"depository","account_subtype":"checking","item_id":"nVWXqxDLpwHbNAqDZ9JyFlmvkNjBwjt6a4Qqa","selected":true,"mask":"0013","is_invalid":false,"ins_name":"Discover","image":"/images/discover.png","auth_supported":true,"vendor":"plaid","payment_instrument_type":"ACH"}],"message":null,"error":null,"success":null,"pending":false,"success":true}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:27:49 PM</td>
+        <td>
+          test failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:28:01 PM</td>
+        <td>
+          Response of initiateTransaction service :{"error":{"message":"Sorry, your transaction was canceled due to an error. Money will be refunded in 3-4 business days if it was deducted.","code":"RE_007","status_code":500},"success":false}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:28:01 PM</td>
+        <td>
+          successfully performed the ach txn by calling initiate V2 transaction for logged in user.........
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:28:01 PM</td>
+        <td>
+          status code --> 500
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:28:01 PM</td>
+        <td>
+          failed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="19"
+          author=""
+          tag="functionalUseCase"
+          device="">
+          <div class="status-avatar pass-bg">
+            <i class="fa fa-check text-white"></i>
+          </div>
+          <div class="test-detail">
+            <span class="meta text-white badge badge-sm"></span>
+            <p class="name">Validation of getValidateUPITest</p>
+            <p class="text-sm"><span>13:28:01 PM</span> / <span>19.072 secs</span></p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<div class='float-right'><span class='badge badge-default'>#test-id=19</span></div>
+<h5 class="test-status text-pass">Validation of getValidateUPITest</h5>
+<span class='badge badge-success'>06.24.2024 13:28:01</span>
+<span class='badge badge-danger'>06.24.2024 13:28:20</span>
+<span class='badge badge-default'>19.072 secs</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default"> functionalUseCase</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:28:01 PM</td>
+        <td>
+          Validation of getValidateUPITest
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:28:20 PM</td>
+        <td>
+          successfully get the response of validate upi .............{"valid":true,"name":"VIKAS KUMAR","message":null,"success":true}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:28:20 PM</td>
+        <td>
+          status code --> 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:28:20 PM</td>
+        <td>
+          response---->{
+    "valid": true,
+    "name": "VIKAS KUMAR",
+    "message": null,
+    "success": true
+}
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="20"
+          author=""
+          tag="functionalUseCase"
+          device="">
+          <div class="status-avatar pass-bg">
+            <i class="fa fa-check text-white"></i>
+          </div>
+          <div class="test-detail">
+            <span class="meta text-white badge badge-sm"></span>
+            <p class="name">Validation of getValidateUPITestNegative</p>
+            <p class="text-sm"><span>13:28:20 PM</span> / <span>11.441 secs</span></p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<div class='float-right'><span class='badge badge-default'>#test-id=20</span></div>
+<h5 class="test-status text-pass">Validation of getValidateUPITestNegative</h5>
+<span class='badge badge-success'>06.24.2024 13:28:20</span>
+<span class='badge badge-danger'>06.24.2024 13:28:32</span>
+<span class='badge badge-default'>11.441 secs</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default"> functionalUseCase</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:28:20 PM</td>
+        <td>
+          Validation of getValidateUPITest
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:28:32 PM</td>
+        <td>
+          successfully get the response of validate upi negative test  .............{"valid":false,"name":null,"message":"Invalid VPA or no matching account exists","success":true}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:28:32 PM</td>
+        <td>
+          status code --> 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:28:32 PM</td>
+        <td>
+          response---->{
+    "valid": false,
+    "name": null,
+    "message": "Invalid VPA or no matching account exists",
+    "success": true
+}
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="21"
+          author=""
+          tag="functionalUseCase"
+          device="">
+          <div class="status-avatar fail-bg">
+            <i class="fa fa-times text-white"></i>
+          </div>
+          <div class="test-detail">
+            <span class="meta text-white badge badge-sm"></span>
+            <p class="name">Validation of deletebeneficiaryTest</p>
+            <p class="text-sm"><span>13:28:32 PM</span> / <span>1.469 secs</span></p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<div class='float-right'><span class='badge badge-default'>#test-id=21</span></div>
+<h5 class="test-status text-fail">Validation of deletebeneficiaryTest</h5>
+<span class='badge badge-success'>06.24.2024 13:28:32</span>
+<span class='badge badge-danger'>06.24.2024 13:28:33</span>
+<span class='badge badge-default'>1.469 secs</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default"> functionalUseCase</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:28:32 PM</td>
+        <td>
+          Validation of deletebeneficiaryTest
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:28:33 PM</td>
+        <td>
+          status code --> 400
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:28:33 PM</td>
+        <td>
+          failed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Tags</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>18</span>
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">functionalUseCase</p>
+<p class="duration text-sm">21 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>functionalUseCase</h4>
+<span status="pass" class='badge log pass-bg'>18 passed</span>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:25:12 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>linkTokenTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:25:52 PM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>signUpServiceTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:26:43 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'> verifyOtpServiceTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:26:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'> validate update user servcice</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:26:48 PM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'> validateAdressServiceTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:26:50 PM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'> validate SSN servcice</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:26:51 PM</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'> validationOfDocumentApi</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:26:53 PM</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'> validationOfLayer2Api</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:26:57 PM</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'> validationOfGetKycStatusService</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:26:59 PM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>fetching the fx hold rate for initiate transaction</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:27:01 PM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'> Validation of addBeneficiaryTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:27:06 PM</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'> Validation of getUserBeneficiaryListTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:27:09 PM</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'> Validation of getPaymentReasonsDataTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:27:09 PM</td>
+<td>
+<a href="#" class="linked" test-id='14' id='14'>Validation of getFundingSourceDataTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:27:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='15' id='15'>Validation of getRequestIdTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:27:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='16' id='16'>Validation of transactionForAbountAccountTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:27:15 PM</td>
+<td>
+<a href="#" class="linked" test-id='17' id='17'>Validation of transactionHistoryCheckingTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:27:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='18' id='18'>Validation of initaiteTransactionV2Test</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:28:01 PM</td>
+<td>
+<a href="#" class="linked" test-id='19' id='19'>Validation of getValidateUPITest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:28:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='20'>Validation of getValidateUPITestNegative</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:28:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='21' id='21'>Validation of deletebeneficiaryTest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul>
+<li>
+<a class="back-to-test" href="javascript:void(0)">
+<i class="fa fa-arrow-left"></i>
+</a>
+</li>
+</ul>
+</div>
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jun 24, 2024 01:25:10 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jun 24, 2024 01:28:34 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>18</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>3</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='85%'>
+<b>18</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='14%'><b>3</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+<div>
+<small data-tooltip='6%'><b>5</b> events failed,
+<b data-tooltip='%'>73</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>functionalUseCase</td>
+<td>18</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>85.714%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 18,
+failParent: 3,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 0,
+failEvents: 5,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 73
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@5cf22a596531402644b8523470526952516f345f/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

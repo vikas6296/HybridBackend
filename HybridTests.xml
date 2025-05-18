@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+   <!---<suite name="HybridTest"    parallel="tests" thread-count="4"> -->
+
+
+<suite name="HybridTest"    >
+    <test name="user flow 1 " >
+        <classes>
+
+            <class name="abound.apitests.UserTests"/>
+
+            <class name="abound.apitests.UserOtpVerifyTests"/>
+
+            <class name="abound.apitests.TokenCreateAndBankAdd"/>
+
+        </classes>
+    </test>
+
+
+</suite>
+
+
+
+
