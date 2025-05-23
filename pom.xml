@@ -20,7 +20,7 @@
             <artifactId>maven-surefire-plugin</artifactId>
             <configuration>
                <suiteXmlFiles>
-						<suiteXmlFile>testng.xml</suiteXmlFile>
+						<suiteXmlFile>HybridTests.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					<properties>
 					<property>
