@@ -15,6 +15,10 @@ public class Constants
     public static final String addBank = "https://dev.timesclub.co/times/plaid/additem/v1/";
 
     public static final String createPublicLinkToken ="https://sandbox.plaid.com/sandbox/public_token/create";
+
+    public static final String createLinkTokenForNeobank = "https://dev.timesclub.co/times/plaid/neo-bank/link/token/v1";
+
+    public static final String createUserOnNeobank = "https://devneobank.timesclub.co/times/users/signup/v1";
     public static final String HEADER_CONTENT_TYPE = "Content-Type";
     public static final String HEADER_AUTH = "Authorization";
 

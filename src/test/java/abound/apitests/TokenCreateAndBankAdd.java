@@ -47,7 +47,6 @@ public class TokenCreateAndBankAdd {
 
 
     AddBankResponse adbResponse = response.as(AddBankResponse.class);
-    System.out.println(adbResponse.toString());
     PrintUtil.printOperation(adbResponse);
 
     TestContext.setAddBankRequestContext(addBank);

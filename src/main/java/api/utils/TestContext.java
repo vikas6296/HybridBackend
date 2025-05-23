@@ -22,6 +22,14 @@ public class TestContext
 
     private static final ThreadLocal<PublicTokenForAddBankResponse> PublicTokenForAddBankResponseContext = new ThreadLocal<>();
 
+    private static final ThreadLocal<LinktokenResponse> linktokenContext = new ThreadLocal<>();
+
+    private static final ThreadLocal<UserLoginOnNeobankRequest> neobankUserLoginRequest = new ThreadLocal<>();
+
+    private static final ThreadLocal<UserLoginOnNeobankResponse> neobankUserLoginResponse = new ThreadLocal<UserLoginOnNeobankResponse>();
+
+
+
 
 
 
@@ -120,6 +128,36 @@ public class TestContext
         return deviceId.get();
     }
 
+
+    public static LinktokenResponse getLinktoken()
+    {
+        return linktokenContext.get();
+
+    }
+
+    public static void setLinktoken(LinktokenResponse lt)
+    {
+        linktokenContext.set(lt);
+    }
+
+    public static UserLoginOnNeobankRequest getUserLoginRequest()
+    {
+        return neobankUserLoginRequest.get();
+    }
+
+    public static void setUserNeobankLoginRequest(UserLoginOnNeobankRequest userLogin)
+    {
+        neobankUserLoginRequest.set(userLogin);
+    }
+    public static UserLoginOnNeobankResponse getUserLoginResponse()
+    {
+        return neobankUserLoginResponse.get();
+    }
+
+    public static void setNeobankUserLoginResponse(UserLoginOnNeobankResponse userLoginResponse)
+    {
+        neobankUserLoginResponse.set(userLoginResponse);
+    }
 
     public static void clear()
     {

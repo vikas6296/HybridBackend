@@ -13,6 +13,12 @@
 
             <class name="abound.apitests.TokenCreateAndBankAdd"/>
 
+            <class name="abound.apitests.NeobankLinkTokenTest"></class>
+
+            <class name="abound.apitests.NeobankUserLoginTest"></class>
+
+
+
         </classes>
     </test>
 

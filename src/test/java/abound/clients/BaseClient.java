@@ -42,11 +42,13 @@ public class BaseClient
     }
 
 
-    public static Response performDelete(String endPoint, Map<String,String>headers) {
+    public static Response performGet(String endPoint, Map<String,String>headers) {
         RequestSpecification requestSpecification = getRequestSpecification(endPoint,headers);
-        Response response =  requestSpecification.delete();
+        Response response =  requestSpecification.get();
 
         return response;
     }
+
+
 
 }
