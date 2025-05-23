@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven 3.9.0'
-        jdk 'jdk-21'
+        maven 'Maven'
+        jdk 'JDK 21'
     }
 
     parameters {
@@ -27,11 +27,12 @@ pipeline {
             }
         }
 
-        stage("Run Tests on ${params.ENV}") {
-            steps {
-                sh "mvn test -Denv=${params.ENV}"
-            }
-        }
+       stage('Run Tests') {
+                  steps {
+                      echo "Running tests on environment: ${params.ENV}"
+                      sh "mvn test -Denv=${params.ENV}"
+                  }
+              }
     }
 
    post {
