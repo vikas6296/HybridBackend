@@ -34,11 +34,12 @@ public class Listeners implements ITestListener
 
     @Override
     public void onStart(ITestContext iTestContext) {
-
+    ExtentReportUtil.initReports();
     }
 
     @Override
     public void onFinish(ITestContext iTestContext) {
 
+        ExtentReportUtil.flushReports();
     }
 }
