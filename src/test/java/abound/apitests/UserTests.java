@@ -23,7 +23,7 @@ public class UserTests extends BaseTest
     public void createTcNewUserTest()
     {
        ExtentTest test =  ExtentReportUtil.extent.createTest("createTcNewUserTest").assignCategory("functional testcase");
-       test.info("creation of user on timesclub system............");
+       test.info("creation of user on timesclub system...............");
 
         UserSignupTcRequest users = new UserSignupTcRequest();
         users.setMobileNumber(DataGenerator.generateUSPhoneNumber());
