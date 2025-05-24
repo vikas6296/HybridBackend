@@ -45,7 +45,7 @@ pipeline {
         // Publish Spark HTML Report
         publishHTML(target: [
             reportDir: 'test-output/Spark',         // ✅ Location of Spark HTML report
-            reportFiles: 'index.html',              // ✅ Entry point of the report
+            reportFiles: 'Index.html',              // ✅ Entry point of the report
             reportName: 'Spark HTML Report',
             keepAll: true,
             allowMissing: false,
