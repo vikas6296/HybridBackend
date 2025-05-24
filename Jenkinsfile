@@ -40,7 +40,7 @@ pipeline {
         echo 'Pipeline execution completed.'
 
         // Archive JUnit-compatible XMLs (if you still want them)
-        junit '**/target/surefire-reports/testng-results.xml'
+        junit 'target/surefire-reports/TEST-*.xml'
 
         // Publish Spark HTML Report
         publishHTML(target: [
