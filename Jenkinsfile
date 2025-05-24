@@ -23,14 +23,14 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'mvn clean compile -e -X'
+                bat 'mvn clean compile -e -X'
             }
         }
 
        stage('Run Tests') {
                   steps {
                       echo "Running tests on environment: ${params.ENV}"
-                      sh "mvn test -Denv=${params.ENV} -e -X "
+                      bat "mvn test -Denv=${params.ENV} -e -X "
                   }
               }
     }
