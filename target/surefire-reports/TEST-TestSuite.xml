@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="14.513" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="19.833" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\vikas.kumar5\AppData\Local\Temp\surefire2098796703254277085\surefirebooter-20250524012431106_3.jar C:\Users\vikas.kumar5\AppData\Local\Temp\surefire2098796703254277085 2025-05-24T01-24-30_674-jvmRun1 surefire-20250524012431106_1tmp surefire_0-20250524012431106_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\vikas.kumar5\AppData\Local\Temp\surefire12468161866990516761\surefirebooter-20250524130758737_3.jar C:\Users\vikas.kumar5\AppData\Local\Temp\surefire12468161866990516761 2025-05-24T13-07-58_164-jvmRun1 surefire-20250524130758737_1tmp surefire_0-20250524130758737_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\vikas.kumar5\HybridFramework\HybridAutomationFramework\target\test-classes;C:\Users\vikas.kumar5\HybridFramework\HybridAutomationFramework\target\classes;C:\Users\vikas.kumar5\.m2\repository\org\testng\testng\6.11\testng-6.11.jar;C:\Users\vikas.kumar5\.m2\repository\com\beust\jcommander\1.64\jcommander-1.64.jar;C:\Users\vikas.kumar5\.m2\repository\org\yaml\snakeyaml\1.17\snakeyaml-1.17.jar;C:\Users\vikas.kumar5\.m2\repository\com\jayway\jsonpath\json-path\2.6.0\json-path-2.6.0.jar;C:\Users\vikas.kumar5\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\vikas.kumar5\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\vikas.kumar5\.m2\repository\org\ow2\asm\asm\9.1\asm-9.1.jar;C:\Users\vikas.kumar5\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\vikas.kumar5\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\vikas.kumar5\.m2\repository\javax\mail\mail\1.4.7\mail-1.4.7.jar;C:\Users\vikas.kumar5\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\vikas.kumar5\.m2\repository\org\json\json\20180813\json-20180813.jar;C:\Users\vikas.kumar5\.m2\repository\com\aventstack\extentreports\5.0.1\extentreports-5.0.1.jar;C:\Users\vikas.kumar5\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\vikas.kumar5\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\vikas.kumar5\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\vikas.kumar5\.m2\repository\com\github\mwiede\jsch\0.1.61\jsch-0.1.61.jar;C:\Users\vikas.kumar5\.m2\repository\mysql\mysql-connector-java\8.0.18\mysql-connector-java-8.0.18.jar;C:\Users\vikas.kumar5\.m2\repository\com\google\protobuf\protobuf-java\3.6.1\protobuf-java-3.6.1.jar;C:\Users\vikas.kumar5\.m2\repository\io\rest-assured\rest-assured\5.0.0\rest-assured-5.0.0.jar;C:\Users\vikas.kumar5\.m2\repository\org\apache\groovy\groovy\4.0.1\groovy-4.0.1.jar;C:\Users\vikas.kumar5\.m2\repository\org\apache\groovy\groovy-xml\4.0.1\groovy-xml-4.0.1.jar;C:\Users\vikas.kumar5\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\vikas.kumar5\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\vikas.kumar5\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\vikas.kumar5\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\vikas.kumar5\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\vikas.kumar5\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\vikas.kumar5\.m2\repository\io\rest-assured\json-path\5.0.0\json-path-5.0.0.jar;C:\Users\vikas.kumar5\.m2\repository\org\apache\groovy\groovy-json\4.0.1\groovy-json-4.0.1.jar;C:\Users\vikas.kumar5\.m2\repository\io\rest-assured\rest-assured-common\5.0.0\rest-assured-common-5.0.0.jar;C:\Users\vikas.kumar5\.m2\repository\io\rest-assured\xml-path\5.0.0\xml-path-5.0.0.jar;C:\Users\vikas.kumar5\.m2\repository\commons-configuration\commons-configuration\1.9\commons-configuration-1.9.jar;C:\Users\vikas.kumar5\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\vikas.kumar5\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\vikas.kumar5\.m2\repository\org\jboss\aerogear\aerogear-otp-java\1.0.0\aerogear-otp-java-1.0.0.jar;C:\Users\vikas.kumar5\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\vikas.kumar5\.m2\repository\net\datafaker\datafaker\1.3.0\datafaker-1.3.0.jar;C:\Users\vikas.kumar5\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\vikas.kumar5\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\vikas.kumar5\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.16.1\jackson-databind-2.16.1.jar;C:\Users\vikas.kumar5\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.16.1\jackson-annotations-2.16.1.jar;C:\Users\vikas.kumar5\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.16.1\jackson-core-2.16.1.jar;C:\Users\vikas.kumar5\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\vikas.kumar5\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\vikas.kumar5\.m2\repository\com\auth0\java-jwt\4.4.0\java-jwt-4.4.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\vikas.kumar5\AppData\Local\Temp\surefire2098796703254277085\surefirebooter-20250524012431106_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\vikas.kumar5\AppData\Local\Temp\surefire12468161866990516761\surefirebooter-20250524130758737_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.3+7-LTS-152"/>
@@ -58,33 +58,33 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="createTcNewUserTest" classname="abound.apitests.UserTests" time="4.191">
-    <system-out><![CDATA[Mobile number generated is --->+18156977765
-{"message_id":"066a9491-0d51-487b-a97a-d65890176de5","signed_up_user":false,"force_logout":false,"mobile_verification_otp_sent":false,"referral_user":false,"sync_required":false,"fall_back_active":false,"success":true}
-UserSignupTcResponse{messageId= '066a9491-0d51-487b-a97a-d65890176de5' ,  success = 'true'}
+  <testcase name="createTcNewUserTest" classname="abound.apitests.UserTests" time="3.879">
+    <system-out><![CDATA[Mobile number generated is --->+18156976188
+{"message_id":"447adb76-572b-4f51-b4dd-085fe77202bd","signed_up_user":false,"force_logout":false,"mobile_verification_otp_sent":false,"referral_user":false,"sync_required":false,"fall_back_active":false,"success":true}
+UserSignupTcResponse{messageId= '447adb76-572b-4f51-b4dd-085fe77202bd' ,  success = 'true'}
 ]]></system-out>
     <system-err><![CDATA[log4j:WARN No appenders could be found for logger (org.apache.http.impl.conn.BasicClientConnectionManager).
 log4j:WARN Please initialize the log4j system properly.
 log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
 ]]></system-err>
   </testcase>
-  <testcase name="userOtpTest" classname="abound.apitests.UserOtpVerifyTests" time="1.411">
-    <system-out><![CDATA[UserOtpTcResponse{message= 'Mobile number verified' ,  token = '8122ecf0e8a3dfbbd36d13b64aa30796:5085b5659f655374c4a9cec531e1a22b:ba3f2adea47b86b0d408de3f7e4d922c'}
+  <testcase name="userOtpTest" classname="abound.apitests.UserOtpVerifyTests" time="2.491">
+    <system-out><![CDATA[UserOtpTcResponse{message= 'Mobile number verified' ,  token = '77d756bc450e12c9eb62517c97afc6e9:241f4b64d446d371df0725c10dcafe65:ba3f2adea47b86b0d408de3f7e4d922c'}
 ]]></system-out>
   </testcase>
-  <testcase name="createPublicTokenTest" classname="abound.apitests.TokenCreateAndBankAdd" time="2.953">
-    <system-out><![CDATA[PublicTokenCreateResponse{publicToken='public-sandbox-7ffa191a-d3b4-4ee7-8089-0627e79e6d42', requestId='7cGKr2Y1ZtUMueW'}
+  <testcase name="createPublicTokenTest" classname="abound.apitests.TokenCreateAndBankAdd" time="3.642">
+    <system-out><![CDATA[PublicTokenCreateResponse{publicToken='public-sandbox-f7a0bb16-f306-48a4-b20a-6dc96a276289', requestId='Nl4PDhBEaqI2SRj'}
 ]]></system-out>
   </testcase>
-  <testcase name="addBankForUser" classname="abound.apitests.TokenCreateAndBankAdd" time="2.019">
-    <system-out><![CDATA[BankAddConflictResponse{message='There were conflicts while adding the account. Please check the status after sometime', details=[], isRewarded=false, isPending=true, bankAddRequestId='2f5fe0da-c7fc-49b8-830b-3879254c7395', success=true}
+  <testcase name="addBankForUser" classname="abound.apitests.TokenCreateAndBankAdd" time="2.951">
+    <system-out><![CDATA[BankAddConflictResponse{message='There were conflicts while adding the account. Please check the status after sometime', details=[], isRewarded=false, isPending=true, bankAddRequestId='8af039fd-0059-4b3e-81b6-2a024182019b', success=true}
 ]]></system-out>
   </testcase>
-  <testcase name="createLinkTokenTest" classname="abound.apitests.NeobankLinkTokenTest" time="1.605">
-    <system-out><![CDATA[LinkTokenResponse{linkToken='5c4de6afe9ec82086e438d5d0125f2c5', expiration='null', requestId='9ae7ab69c88db8b9', bankAddType='null', accountsPending=false, pendingBanks='null', jwtToken='null', ssoToken='0d959c4694c833e61a7f39aa62072858', isUserSignedUp=false, userOptedInRemittance=false, userOptedInBanking=false, kycApproved=false, success=true}
+  <testcase name="createLinkTokenTest" classname="abound.apitests.NeobankLinkTokenTest" time="1.556">
+    <system-out><![CDATA[LinkTokenResponse{linkToken='8866a6fe26bf407edea59ccd6ee11ca4', expiration='null', requestId='505b5b9fd5cb8e20', bankAddType='null', accountsPending=false, pendingBanks='null', jwtToken='null', ssoToken='47137a6db04ef1350b53cef842442d66', isUserSignedUp=false, userOptedInRemittance=false, userOptedInBanking=false, kycApproved=false, success=true}
 ]]></system-out>
   </testcase>
-  <testcase name="neobankUserLoginTest" classname="abound.apitests.NeobankUserLoginTest" time="0.984">
+  <testcase name="neobankUserLoginTest" classname="abound.apitests.NeobankUserLoginTest" time="3.95">
     <system-out><![CDATA[UserLoginOnNeobankResponse(requestId=null, messageId=null, userSignUpStatus=null, userType=null, newUserLogin=false, layer2MigrationRequired=false, success=false)
 ]]></system-out>
   </testcase>

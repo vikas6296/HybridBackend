@@ -2,96 +2,96 @@
 <testng-results ignored="8" total="14" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-23T19:54:32Z" name="HybridTest" finished-at="2025-05-23T19:54:46Z" duration-ms="13641">
+  <suite started-at="2025-05-24T07:38:00Z" name="HybridTest" finished-at="2025-05-24T07:38:19Z" duration-ms="18923">
     <groups>
     </groups>
-    <test started-at="2025-05-23T19:54:32Z" name="user flow 1 " finished-at="2025-05-23T19:54:46Z" duration-ms="13641">
+    <test started-at="2025-05-24T07:38:00Z" name="user flow 1 " finished-at="2025-05-24T07:38:19Z" duration-ms="18923">
       <class name="abound.apitests.TokenCreateAndBankAdd">
-        <test-method signature="createPublicTokenTest()[pri:0, instance:abound.apitests.TokenCreateAndBankAdd@1b083826]" started-at="2025-05-24T01:24:38Z" name="createPublicTokenTest" finished-at="2025-05-24T01:24:41Z" duration-ms="2949" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:abound.apitests.TokenCreateAndBankAdd@1b083826]" started-at="2025-05-24T13:08:07Z" name="setUp" finished-at="2025-05-24T13:08:07Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="createPublicTokenTest()[pri:0, instance:abound.apitests.TokenCreateAndBankAdd@1b083826]" started-at="2025-05-24T13:08:07Z" name="createPublicTokenTest" finished-at="2025-05-24T13:08:10Z" duration-ms="3640" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPublicTokenTest -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:abound.apitests.TokenCreateAndBankAdd@1b083826]" started-at="2025-05-24T01:24:38Z" name="setUp" finished-at="2025-05-24T01:24:38Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:abound.apitests.TokenCreateAndBankAdd@1b083826]" started-at="2025-05-24T01:24:41Z" name="tearDown" finished-at="2025-05-24T01:24:41Z" duration-ms="17" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:abound.apitests.TokenCreateAndBankAdd@1b083826]" started-at="2025-05-24T13:08:10Z" name="tearDown" finished-at="2025-05-24T13:08:10Z" duration-ms="55" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:abound.apitests.TokenCreateAndBankAdd@1b083826]" started-at="2025-05-24T01:24:41Z" name="setUp" finished-at="2025-05-24T01:24:41Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:abound.apitests.TokenCreateAndBankAdd@1b083826]" started-at="2025-05-24T13:08:10Z" name="setUp" finished-at="2025-05-24T13:08:10Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addBankForUser()[pri:0, instance:abound.apitests.TokenCreateAndBankAdd@1b083826]" started-at="2025-05-24T01:24:41Z" name="addBankForUser" finished-at="2025-05-24T01:24:43Z" depends-on-methods="abound.apitests.TokenCreateAndBankAdd.createPublicTokenTest" duration-ms="2017" status="PASS">
+        <test-method signature="addBankForUser()[pri:0, instance:abound.apitests.TokenCreateAndBankAdd@1b083826]" started-at="2025-05-24T13:08:10Z" name="addBankForUser" finished-at="2025-05-24T13:08:13Z" depends-on-methods="abound.apitests.TokenCreateAndBankAdd.createPublicTokenTest" duration-ms="2948" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addBankForUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:abound.apitests.TokenCreateAndBankAdd@1b083826]" started-at="2025-05-24T01:24:43Z" name="tearDown" finished-at="2025-05-24T01:24:43Z" duration-ms="40" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:abound.apitests.TokenCreateAndBankAdd@1b083826]" started-at="2025-05-24T13:08:13Z" name="tearDown" finished-at="2025-05-24T13:08:13Z" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- abound.apitests.TokenCreateAndBankAdd -->
       <class name="abound.apitests.UserTests">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:abound.apitests.UserTests@2890c451]" started-at="2025-05-24T01:24:32Z" name="beforeSuite" finished-at="2025-05-24T01:24:32Z" duration-ms="330" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:abound.apitests.UserTests@2890c451]" started-at="2025-05-24T13:08:00Z" name="beforeSuite" finished-at="2025-05-24T13:08:00Z" duration-ms="324" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:abound.apitests.UserTests@2890c451]" started-at="2025-05-24T01:24:32Z" name="setUp" finished-at="2025-05-24T01:24:32Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:abound.apitests.UserTests@2890c451]" started-at="2025-05-24T13:08:00Z" name="setUp" finished-at="2025-05-24T13:08:00Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="createTcNewUserTest()[pri:0, instance:abound.apitests.UserTests@2890c451]" started-at="2025-05-24T01:24:32Z" name="createTcNewUserTest" finished-at="2025-05-24T01:24:36Z" duration-ms="4193" status="PASS">
+        <test-method signature="createTcNewUserTest()[pri:0, instance:abound.apitests.UserTests@2890c451]" started-at="2025-05-24T13:08:00Z" name="createTcNewUserTest" finished-at="2025-05-24T13:08:04Z" duration-ms="3879" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTcNewUserTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:abound.apitests.UserTests@2890c451]" started-at="2025-05-24T01:24:36Z" name="tearDown" finished-at="2025-05-24T01:24:37Z" duration-ms="346" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:abound.apitests.UserTests@2890c451]" started-at="2025-05-24T13:08:04Z" name="tearDown" finished-at="2025-05-24T13:08:04Z" duration-ms="298" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:abound.apitests.UserTests@2890c451]" started-at="2025-05-24T01:24:46Z" name="afterSuite" finished-at="2025-05-24T01:24:46Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:abound.apitests.UserTests@2890c451]" started-at="2025-05-24T13:08:19Z" name="afterSuite" finished-at="2025-05-24T13:08:19Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- abound.apitests.UserTests -->
       <class name="abound.apitests.UserOtpVerifyTests">
-        <test-method signature="userOtpTest()[pri:0, instance:abound.apitests.UserOtpVerifyTests@40e6dfe1]" started-at="2025-05-24T01:24:37Z" name="userOtpTest" finished-at="2025-05-24T01:24:38Z" duration-ms="1408" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userOtpTest -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:abound.apitests.UserOtpVerifyTests@40e6dfe1]" started-at="2025-05-24T01:24:37Z" name="setUp" finished-at="2025-05-24T01:24:37Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:abound.apitests.UserOtpVerifyTests@40e6dfe1]" started-at="2025-05-24T13:08:04Z" name="setUp" finished-at="2025-05-24T13:08:04Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:abound.apitests.UserOtpVerifyTests@40e6dfe1]" started-at="2025-05-24T01:24:38Z" name="tearDown" finished-at="2025-05-24T01:24:38Z" duration-ms="14" status="PASS">
+        <test-method signature="userOtpTest()[pri:0, instance:abound.apitests.UserOtpVerifyTests@40e6dfe1]" started-at="2025-05-24T13:08:04Z" name="userOtpTest" finished-at="2025-05-24T13:08:07Z" duration-ms="2463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userOtpTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:abound.apitests.UserOtpVerifyTests@40e6dfe1]" started-at="2025-05-24T13:08:07Z" name="tearDown" finished-at="2025-05-24T13:08:07Z" duration-ms="31" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- abound.apitests.UserOtpVerifyTests -->
       <class name="abound.apitests.NeobankLinkTokenTest">
-        <test-method signature="createLinkTokenTest()[pri:0, instance:abound.apitests.NeobankLinkTokenTest@123f1134]" started-at="2025-05-24T01:24:43Z" name="createLinkTokenTest" finished-at="2025-05-24T01:24:45Z" duration-ms="1601" status="PASS">
+        <test-method signature="createLinkTokenTest()[pri:0, instance:abound.apitests.NeobankLinkTokenTest@123f1134]" started-at="2025-05-24T13:08:13Z" name="createLinkTokenTest" finished-at="2025-05-24T13:08:15Z" duration-ms="1552" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createLinkTokenTest -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:abound.apitests.NeobankLinkTokenTest@123f1134]" started-at="2025-05-24T01:24:43Z" name="setUp" finished-at="2025-05-24T01:24:43Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:abound.apitests.NeobankLinkTokenTest@123f1134]" started-at="2025-05-24T13:08:13Z" name="setUp" finished-at="2025-05-24T13:08:13Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:abound.apitests.NeobankLinkTokenTest@123f1134]" started-at="2025-05-24T01:24:45Z" name="tearDown" finished-at="2025-05-24T01:24:45Z" duration-ms="34" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:abound.apitests.NeobankLinkTokenTest@123f1134]" started-at="2025-05-24T13:08:15Z" name="tearDown" finished-at="2025-05-24T13:08:15Z" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- abound.apitests.NeobankLinkTokenTest -->
       <class name="abound.apitests.NeobankUserLoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:abound.apitests.NeobankUserLoginTest@7d68ef40]" started-at="2025-05-24T01:24:45Z" name="setUp" finished-at="2025-05-24T01:24:45Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:abound.apitests.NeobankUserLoginTest@7d68ef40]" started-at="2025-05-24T13:08:15Z" name="setUp" finished-at="2025-05-24T13:08:15Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="neobankUserLoginTest()[pri:0, instance:abound.apitests.NeobankUserLoginTest@7d68ef40]" started-at="2025-05-24T01:24:45Z" name="neobankUserLoginTest" finished-at="2025-05-24T01:24:46Z" duration-ms="982" status="PASS">
+        <test-method signature="neobankUserLoginTest()[pri:0, instance:abound.apitests.NeobankUserLoginTest@7d68ef40]" started-at="2025-05-24T13:08:15Z" name="neobankUserLoginTest" finished-at="2025-05-24T13:08:19Z" duration-ms="3947" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- neobankUserLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:abound.apitests.NeobankUserLoginTest@7d68ef40]" started-at="2025-05-24T01:24:46Z" name="tearDown" finished-at="2025-05-24T01:24:46Z" duration-ms="20" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:abound.apitests.NeobankUserLoginTest@7d68ef40]" started-at="2025-05-24T13:08:19Z" name="tearDown" finished-at="2025-05-24T13:08:19Z" duration-ms="54" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
