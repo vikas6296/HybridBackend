@@ -22,26 +22,26 @@ public class UserTests extends BaseTest
     @Test
     public void createTcNewUserTest()
     {
-       ExtentTest test =  ExtentReportUtil.extent.createTest("createTcNewUserTest").assignCategory("functional testcase");
-       test.info("creation of user on timesclub system...............");
+           ExtentTest test =  ExtentReportUtil.extent.createTest("createTcNewUserTest").assignCategory("functional testcase");
+           test.info("creation of user on timesclub system...............");
 
-        UserSignupTcRequest users = new UserSignupTcRequest();
-        users.setMobileNumber(DataGenerator.generateUSPhoneNumber());
+            UserSignupTcRequest users = new UserSignupTcRequest();
+            users.setMobileNumber(DataGenerator.generateUSPhoneNumber());
 
-        UserClient client = new UserClient();
-        Response response = client.createUserOnTc(users);
+            UserClient client = new UserClient();
+            Response response = client.createUserOnTc(users);
 
-        System.out.println(response.asString());
+            System.out.println(response.asString());
 
-        UserSignupTcResponse user = response.as(UserSignupTcResponse.class);
+            UserSignupTcResponse user = response.as(UserSignupTcResponse.class);
 
-        PrintUtil.printOperation(user);
-        test.info(user.toString());
+            PrintUtil.printOperation(user);
+            test.info(user.toString());
 
-        AssertionUtil.assertNotNull(user.getMessageId(),"message ID");
+            AssertionUtil.assertNotNull(user.getMessageId(),"message ID");
 
-        TestContext.setUserRequest(users);
-        TestContext.setUserResponse(user);
+            TestContext.setUserRequest(users);
+            TestContext.setUserResponse(user);
 
 
     }

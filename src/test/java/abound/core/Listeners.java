@@ -1,5 +1,6 @@
 package abound.core;
 
+import com.aventstack.extentreports.ExtentTest;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -9,7 +10,10 @@ public class Listeners implements ITestListener
 
     @Override
     public void onTestStart(ITestResult iTestResult) {
-
+        String testName = iTestResult.getMethod().getMethodName();
+        ExtentTest test = ExtentReportUtil.extent.createTest(testName);
+        ExtentReportUtil.setTest(test);
+        test.info("🚀 Test started: " + testName);
     }
 
     @Override
