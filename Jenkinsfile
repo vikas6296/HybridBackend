@@ -61,7 +61,7 @@ pipeline {
     }
 
     failure {
-        echo '❌ Neobank Build or tests failed.......'
+        echo '❌ Neobank Build or tests failed..........'
         mail to: 'vtest9910@gmail.com,vikas.kumar5@timesinternet.in,vikas.kumar5@joinabound.com',
              subject: "❌ Build Failed: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
              body: "Build #${env.BUILD_NUMBER} failed.\nCheck: ${env.BUILD_URL}"
