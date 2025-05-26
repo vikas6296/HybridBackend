@@ -30,6 +30,7 @@ public class UserOtpVerifyTests extends BaseTest
     UserClient user = new UserClient();
     Response response = user.userVerifyOtpOnTc(userOtp);
 
+    PrintUtil.printOperation(userOtp);
     UserOtpTcResponse userOtpTcResponse = response.as(UserOtpTcResponse.class);
 
 

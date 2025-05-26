@@ -28,6 +28,7 @@ public class UserTests extends BaseTest
             UserSignupTcRequest users = new UserSignupTcRequest();
             users.setMobileNumber(DataGenerator.generateUSPhoneNumber());
 
+            PrintUtil.printOperation(users);
             UserClient client = new UserClient();
             Response response = client.createUserOnTc(users);
 
