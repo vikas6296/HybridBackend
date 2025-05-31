@@ -57,10 +57,15 @@ pipeline {
     success {
 
     script {
-                def comparisonReport = ''
-                if (fileExists('comparison_report.html')) {
-                    comparisonReport = readFile('comparison_report.html')
-                }
+
+
+      def rawHtml = readFile('comparison_report.html')
+
+      // Strip outer tags if needed (optional)
+      def comparisonReport = rawHtml
+          .replaceAll(/(?s)<html>.*?<body>/, '')  // remove <html><head>...<body>
+          .replaceAll('</body>\\s*</html>', '')   // remove </body></html>
+
         echo '✅ Neobank Build & tests passed successfully !'
         mail to: 'vtest9910@gmail.com,vikas.kumar5@timesinternet.in,vikas.kumar5@joinabound.com',
              subject: "✅ Build Success: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
@@ -77,10 +82,12 @@ pipeline {
     failure {
 
     script {
-                def comparisonReport = ''
-                if (fileExists('comparison_report.html')) {
-                    comparisonReport = readFile('comparison_report.html')
-                }
+              def rawHtml = readFile('comparison_report.html')
+
+                   // Strip outer tags if needed (optional)
+                   def comparisonReport = rawHtml
+                       .replaceAll(/(?s)<html>.*?<body>/, '')  // remove <html><head>...<body>
+                       .replaceAll('</body>\\s*</html>', '')   // remove </body></html>
 
 
         echo '❌ Neobank Build or tests failed..........'
