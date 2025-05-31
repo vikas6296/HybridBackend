@@ -69,6 +69,7 @@ pipeline {
         echo '✅ Neobank Build & tests passed successfully !'
         mail to: 'vtest9910@gmail.com,vikas.kumar5@timesinternet.in,vikas.kumar5@joinabound.com',
              subject: "✅ Build Success: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+             mimeType: 'text/html',
              body: """
                                <p>Build #${env.BUILD_NUMBER} passed.</p>
                                <p>Check: <a href="${env.BUILD_URL}">${env.BUILD_URL}</a></p>
@@ -93,6 +94,7 @@ pipeline {
         echo '❌ Neobank Build or tests failed..........'
         mail to: 'vtest9910@gmail.com,vikas.kumar5@timesinternet.in,vikas.kumar5@joinabound.com',
              subject: "❌ Build Failed: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+             mimeType: 'text/html',
              body: """
                                <p>Build #${env.BUILD_NUMBER} passed.</p>
                                <p>Check: <a href="${env.BUILD_URL}">${env.BUILD_URL}</a></p>
