@@ -14,6 +14,8 @@ public class BaseTest
         LogUtil.init(); // Init log4j
         ExtentReportUtil.initReports(); // Initialize Extent Reports
         ConfigManager.load(); // Load environment configs
+        ComparisionReportUtil.initializeReportFile();
+
     }
 
     @BeforeMethod
@@ -29,8 +31,9 @@ public class BaseTest
 
     @AfterSuite
     public void afterSuite() {
-        // Optional: close DB connections, stop WireMock, etc.
+
         LogUtil.info("==== Test Suite Execution Completed ====");
+        ComparisionReportUtil.finalizeReportFile();
     }
 
 }

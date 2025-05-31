@@ -2,6 +2,7 @@ package abound.apitests;
 
 import abound.clients.UserClient;
 import abound.core.BaseTest;
+import abound.core.ComparisionReportUtil;
 import abound.core.ExtentReportUtil;
 import api.builders.PublicTokenRequestBuilder;
 import api.models.AddBankRequest;
@@ -17,11 +18,13 @@ import io.restassured.response.Response;
 import org.testng.annotations.Test;
 import utils.PrintUtil;
 
+import java.lang.reflect.Method;
+
 public class TokenCreateAndBankAdd extends BaseTest
 {
 
     @Test
-    public void createPublicTokenTest() {
+    public void createPublicTokenTest(Method method) {
 
         ExtentTest test =  ExtentReportUtil.extent.createTest("createPublicTokenTest").assignCategory("functional testcase");
         test.info("creating public token for bankadd for user on timesclub system............");
@@ -38,10 +41,13 @@ public class TokenCreateAndBankAdd extends BaseTest
     TestContext.setPublicTokenContextRequest(publicToken);
     TestContext.publicTokenForAddBankResponse(publicTokenResponse);
 
-}
+        ComparisionReportUtil.appendComparisonTable(publicTokenResponse,method.getName(),test);
+
+
+    }
 
 @Test(dependsOnMethods = "createPublicTokenTest" )
-    public void addBankForUser() throws JsonProcessingException {
+    public void addBankForUser(Method method) throws JsonProcessingException {
     ExtentTest test =  ExtentReportUtil.extent.createTest("addBankForUser").assignCategory("functional testcase");
     test.info("Bank add test for user on timesclub system............");
 
@@ -59,6 +65,9 @@ public class TokenCreateAndBankAdd extends BaseTest
     test.info(adbResponse.toString());
     TestContext.setAddBankRequestContext(addBank);
     TestContext.setAddBankResponseContext(adbResponse);
+
+    ComparisionReportUtil.appendComparisonTable(adbResponse,method.getName(),test);
+
 
 }
 

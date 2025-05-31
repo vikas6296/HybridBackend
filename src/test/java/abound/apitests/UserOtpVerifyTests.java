@@ -1,7 +1,9 @@
 package abound.apitests;
 
 import abound.clients.UserClient;
+import abound.core.AssertionUtil;
 import abound.core.BaseTest;
+import abound.core.ComparisionReportUtil;
 import abound.core.ExtentReportUtil;
 import api.models.UserOtpTcRequest;
 import api.models.UserOtpTcResponse;
@@ -12,11 +14,13 @@ import io.restassured.response.Response;
 import org.testng.annotations.Test;
 import utils.PrintUtil;
 
+import java.lang.reflect.Method;
+
 public class UserOtpVerifyTests extends BaseTest
 {
 
   @Test
-  public void userOtpTest() {
+  public void userOtpTest(Method method) {
 
     ExtentTest test =  ExtentReportUtil.extent.createTest("userOtpTest").assignCategory("functional testcase");
     test.info("Validation of users otp on timesclub system............");
@@ -35,12 +39,12 @@ public class UserOtpVerifyTests extends BaseTest
 
 
     PrintUtil.printOperation(userOtpTcResponse);
-    test.info(userOtpTcResponse.toString());
+
 
    TestContext.setUserOtpRequest(userOtp);
    TestContext.setUserOtpResponse(userOtpTcResponse);
 
-
+    ComparisionReportUtil.appendComparisonTable(userOtpTcResponse,method.getName(),test);
 
   }
 

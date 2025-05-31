@@ -2,6 +2,9 @@ package abound.core;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.Markup;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import org.testng.IReporter;
 import org.testng.ISuite;
@@ -54,6 +57,20 @@ public class ExtentReportUtil implements IReporter
 
     public static void removeTest() {
         testThread.remove();
+    }
+
+    public static void logTable(ExtentTest test, String[][] tableData, String message) {
+        Markup table = MarkupHelper.createTable(tableData);
+        test.info(message);
+        test.info(table);
+    }
+
+    public static void logJson(ExtentTest test, String jsonString) {
+        test.info(MarkupHelper.createCodeBlock(jsonString, com.aventstack.extentreports.markuputils.CodeLanguage.JSON));
+    }
+
+    public static void logLabel(ExtentTest test, String message, ExtentColor color) {
+        test.info(MarkupHelper.createLabel(message, color));
     }
 
 }
