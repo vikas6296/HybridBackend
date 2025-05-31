@@ -21,7 +21,7 @@ public class ComparisionReportUtil
                     "table {border-collapse: collapse; width: 100%;}" +
                     "th, td {border: 1px solid #ccc; padding: 8px; text-align: left;}" +
                     "th {background-color: #f2f2f2;}" +
-                    "</style></head><body><h1>API Comparison Report</h1><br/>";
+                    "</style></head><body><h1>API Automation Report</h1><br/>";
             Files.write(REPORT_PATH, initialHtml.getBytes(StandardCharsets.UTF_8),
                     StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING);
         } catch (IOException e) {
