@@ -13,9 +13,9 @@ public class AssertionUtil
     }
 
 
-    public static void assertNotNullWithReport(Object actual, String fieldName, String responseBody, ExtentTest test) {
+    public static void assertNotNullWithReport( String fieldName, String responseBody, ExtentTest test) {
         try {
-            Assert.assertNotNull(actual, fieldName + " should not be null");
+            AssertionUtil.assertNotNull(fieldName , fieldName + " should not be null");
             test.pass("Assertion passed: " + fieldName + " is not null");
         } catch (AssertionError e) {
             test.fail("❌ Assertion failed: " + fieldName + " is null");

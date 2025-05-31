@@ -38,7 +38,7 @@ public class UserTests extends BaseTest
             PrintUtil.printOperation(user);
             test.info(user.toString());
 
-            AssertionUtil.assertNotNull(user.getMessageId(),"message ID");
+            AssertionUtil.assertNotNullWithReport(user.getMessageId(),PrintUtil.printObject(user),test);
 
             TestContext.setUserRequest(users);
             TestContext.setUserResponse(user);
