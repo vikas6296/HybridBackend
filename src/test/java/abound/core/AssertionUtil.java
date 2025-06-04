@@ -17,7 +17,7 @@ public class AssertionUtil
         try {
             AssertionUtil.assertNotNull(fieldName , fieldName + " should not be null");
             test.pass("Assertion passed: " + fieldName + " is not null");
-        } catch (AssertionError e) {
+        } catch (Exception e) {
             test.fail("❌ Assertion failed: " + fieldName + " is null");
             test.fail("<pre>" + prettyPrintJson(responseBody) + "</pre>");
             throw e;
@@ -28,7 +28,7 @@ public class AssertionUtil
         try {
             Assert.assertEquals(actual, expected, message);
             test.pass("Assertion passed: " + message);
-        } catch (AssertionError e) {
+        } catch (Exception e) {
             test.fail("❌ Assertion failed: " + message);
             test.fail("Expected: " + expected + ", but got: " + actual);
             test.fail("<pre>" + prettyPrintJson(responseBody) + "</pre>");

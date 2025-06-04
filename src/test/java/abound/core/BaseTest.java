@@ -15,6 +15,7 @@ public class BaseTest
         ExtentReportUtil.initReports(); // Initialize Extent Reports
         ConfigManager.load(); // Load environment configs
         ComparisionReportUtil.initializeReportFile();
+        Helpers.configureTimeouts();
 
     }
 

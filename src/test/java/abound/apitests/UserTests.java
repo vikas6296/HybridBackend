@@ -1,10 +1,10 @@
 package abound.apitests;
 
+import abound.adapters.http.HttpClientAdapter;
+import abound.clients.ClientType;
 import abound.clients.UserClient;
-import abound.core.AssertionUtil;
-import abound.core.BaseTest;
-import abound.core.ComparisionReportUtil;
-import abound.core.ExtentReportUtil;
+import abound.core.*;
+import abound.factories.ClientFactory;
 import api.models.UserSignupTcRequest;
 
 import api.models.UserSignupTcResponse;
@@ -30,8 +30,12 @@ public class UserTests extends BaseTest
             users.setMobileNumber(DataGenerator.generateUSPhoneNumber());
 
             PrintUtil.printOperation(users);
-            UserClient client = new UserClient();
-            Response response = client.createUserOnTc(users);
+
+        @SuppressWarnings("unchecked")
+        HttpClientAdapter<UserSignupTcRequest> client =
+                (HttpClientAdapter<UserSignupTcRequest>) ClientFactory.getClient(ClientType.USER);
+
+          Response response = SafeApiExecutorUtil.execute(client,users,test);
 
             UserSignupTcResponse user = response.as(UserSignupTcResponse.class);
 
