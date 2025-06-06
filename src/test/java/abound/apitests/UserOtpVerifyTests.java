@@ -1,12 +1,14 @@
 package abound.apitests;
 
+import abound.adapters.http.AdapterType;
+import abound.adapters.http.HttpClientAdapter;
+import abound.clients.ClientType;
 import abound.clients.UserClient;
-import abound.core.AssertionUtil;
-import abound.core.BaseTest;
-import abound.core.ComparisionReportUtil;
-import abound.core.ExtentReportUtil;
+import abound.core.*;
+import abound.factories.ClientFactory;
 import api.models.UserOtpTcRequest;
 import api.models.UserOtpTcResponse;
+import api.models.UserSignupTcRequest;
 import api.utils.TestContext;
 import com.aventstack.extentreports.ExtentTest;
 import core.Constants;
@@ -31,8 +33,12 @@ public class UserOtpVerifyTests extends BaseTest
     userOtp.setOtp(Constants.otp);
     userOtp.setVerifyOtpLogin(Constants.verifyOtpLoginType);
 
-    UserClient user = new UserClient();
-    Response response = user.userVerifyOtpOnTc(userOtp);
+
+    HttpClientAdapter<UserOtpTcRequest> client =
+            ClientFactory.getClient(ClientType.USER, AdapterType.USER_OTP);
+
+    Response response = SafeApiExecutorUtil.execute(client,userOtp,test);
+
 
     PrintUtil.printOperation(userOtp);
     UserOtpTcResponse userOtpTcResponse = response.as(UserOtpTcResponse.class);

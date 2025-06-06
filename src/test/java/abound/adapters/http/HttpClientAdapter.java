@@ -7,5 +7,5 @@ import io.restassured.response.Response;
 public interface HttpClientAdapter<W> {
     Response execute(W requestObject);
 
-    Response execute(UserOtpTcRequest requestObject);
+
 }

@@ -1,22 +1,25 @@
 package abound.factories;
 
+import abound.adapters.http.AdapterRegistry;
+import abound.adapters.http.AdapterType;
 import abound.adapters.http.HttpClientAdapter;
-import abound.adapters.http.UserClientAdapter;
 import abound.clients.ClientType;
 import abound.clients.UserClient;
 
-import static abound.clients.ClientType.USER;
-
 public class ClientFactory
 {
-  public static HttpClientAdapter<?> getClient(ClientType type)
+  public static  <T> HttpClientAdapter <T> getClient(ClientType type , AdapterType a)
   {
       switch(type)
       {
-          case USER : return  new UserClientAdapter(new UserClient());
+          case USER :
+          case BANK:
+              return  AdapterRegistry.getAdapter(a);
           default : throw new IllegalArgumentException("Unknown client type: " + type);
       }
 
+
   }
+
 
 }

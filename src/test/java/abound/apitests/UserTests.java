@@ -1,5 +1,6 @@
 package abound.apitests;
 
+import abound.adapters.http.AdapterType;
 import abound.adapters.http.HttpClientAdapter;
 import abound.clients.ClientType;
 import abound.clients.UserClient;
@@ -31,9 +32,12 @@ public class UserTests extends BaseTest
 
             PrintUtil.printOperation(users);
 
-        @SuppressWarnings("unchecked")
+//        @SuppressWarnings("unchecked")
+//        HttpClientAdapter<UserSignupTcRequest> client =
+//                (HttpClientAdapter<UserSignupTcRequest>) ClientFactory.getClient(ClientType.USER);
+
         HttpClientAdapter<UserSignupTcRequest> client =
-                (HttpClientAdapter<UserSignupTcRequest>) ClientFactory.getClient(ClientType.USER);
+                ClientFactory.getClient(ClientType.USER, AdapterType.USER_SIGNUP);
 
           Response response = SafeApiExecutorUtil.execute(client,users,test);
 

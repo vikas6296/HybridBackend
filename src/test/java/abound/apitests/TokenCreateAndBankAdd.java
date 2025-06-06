@@ -1,14 +1,16 @@
 package abound.apitests;
 
+import abound.adapters.http.AdapterType;
+import abound.adapters.http.HttpClientAdapter;
+import abound.clients.ClientType;
 import abound.clients.UserClient;
 import abound.core.BaseTest;
 import abound.core.ComparisionReportUtil;
 import abound.core.ExtentReportUtil;
+import abound.core.SafeApiExecutorUtil;
+import abound.factories.ClientFactory;
 import api.builders.PublicTokenRequestBuilder;
-import api.models.AddBankRequest;
-import api.models.AddBankResponse;
-import api.models.PublicTokenForAddBankRequest;
-import api.models.PublicTokenForAddBankResponse;
+import api.models.*;
 import api.utils.TestContext;
 import com.aventstack.extentreports.ExtentTest;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -31,8 +33,11 @@ public class TokenCreateAndBankAdd extends BaseTest
 
     PublicTokenForAddBankRequest publicToken = PublicTokenRequestBuilder.defaultRequest();
 
-    UserClient uc = new UserClient();
-    Response response = uc.createPublicTokenForBankAdd(publicToken);
+        HttpClientAdapter<PublicTokenForAddBankRequest> client =
+                ClientFactory.getClient(ClientType.USER, AdapterType.GET_PUBLIC_TOKEN);
+
+        Response response = SafeApiExecutorUtil.execute(client,publicToken,test);
+
 
     PublicTokenForAddBankResponse publicTokenResponse = response.as(PublicTokenForAddBankResponse.class);
     PrintUtil.printOperation(publicTokenResponse);

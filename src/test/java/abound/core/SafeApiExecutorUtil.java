@@ -10,9 +10,13 @@ public class SafeApiExecutorUtil
 
     public static <T> Response execute(HttpClientAdapter<T> adapter, T request, ExtentTest test) {
         try {
+
+            if(request != null)
             test.info("Sending API request: <pre>" + PrintUtil.printObject(request) + "</pre>");
+
             Response response = adapter.execute(request);
             test.pass("✅ API executed successfully.");
+
             return response;
         } catch (Exception e) {
             test.fail("❌ API call failed due to exception: " + e.getClass().getSimpleName());
