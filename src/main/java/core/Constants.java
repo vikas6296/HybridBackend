@@ -19,6 +19,11 @@ public class Constants
     public static final String createLinkTokenForNeobank = "https://dev.timesclub.co/times/plaid/neo-bank/token/v2?request_type=GET_USER&source=REMITTANCE";
 
     public static final String createUserOnNeobank = "https://devneobank.timesclub.co/times/users/signup/v1";
+
+
+
+    public static final String updateUserDetails = "https://devneobank.timesclub.co/times/users//update/v1";
+
     public static final String HEADER_CONTENT_TYPE = "Content-Type";
     public static final String HEADER_AUTH = "Authorization";
 

@@ -19,6 +19,8 @@ public class AdapterRegistry
         register(USER_OTP, new UserOtpAdapter(userClient));
         register(GET_PUBLIC_TOKEN,new CreateTokenAdapter(userClient));
         register(GET_LINK_TOKEN,new GetLinkTokenAdapter(neobankUserClient));
+        register(NEOBANK_USER_SIGNUP,new NeobankUserSignupAdapter(neobankUserClient));
+        register(UPDATE_USER_DETAILS,new UpdateUserDetailsAdapter(neobankUserClient));
 
 
         // Add more here as needed

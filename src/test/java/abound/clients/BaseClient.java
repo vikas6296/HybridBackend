@@ -49,6 +49,12 @@ public class BaseClient
         return response;
     }
 
+    public static Response performPut(String endPoint, Object requestPayloadAsPojo, Map<String,String>headers) {
+        RequestSpecification requestSpecification = getRequestSpecification(endPoint, requestPayloadAsPojo, headers);
+        Response response =  requestSpecification.put();
+
+        return response;
+    }
 
 
 }

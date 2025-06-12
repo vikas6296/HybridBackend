@@ -69,6 +69,21 @@ public class HeaderManager {
     }
 
 
+    public static Map<String,String> getDefaultHeadersForRemittanceWithBearerToken()
+    {
+        Map<String, String> headers = new HashMap<>();
+        headers.put("Content-Type", "application/json");
+        headers.put("user_type", "PRIMARY");
+        headers.put("Source", "REMITTANCE");
+        headers.put("customer-id",TestContext.getUserOtpResponse().getCustomerId());
+        headers.put("isTokenRotationON","true");
+        headers.put("Nb-Sso-Enabled","true");
+        headers.put("User-Agent", "IOS Darwin");
+        headers.put("link-token",TestContext.getLinktoken().getLinkToken());
+        headers.put("Authorization","Bearer "+TestContext.getLinktoken().getJwtToken());
+        return  headers;
+
+    }
 
 
 }

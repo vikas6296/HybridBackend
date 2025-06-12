@@ -12,13 +12,16 @@ import lombok.*;
 @JsonInclude(JsonInclude.Include.NON_DEFAULT)
 @AllArgsConstructor
 @ToString
-public class UserLoginOnNeobankRequest
+public class UpdateUserDetailsRequest
 {
-    @JsonProperty("loginType")
-    private String loginType;
+    @JsonProperty
+    private String firstName;
 
-    @JsonProperty("token")
-    private String token ;
+    @JsonProperty
+    private String lastName;
+
+    @JsonProperty
+    private String DOB;
 
 
 }

@@ -5,7 +5,9 @@ public enum AdapterType {
     GET_PUBLIC_TOKEN,
     USER_SIGNUP,
     USER_OTP,
-    NEOBANK_USER_SIGNUP
+    NEOBANK_USER_SIGNUP,
+
+    UPDATE_USER_DETAILS
 
 
 }

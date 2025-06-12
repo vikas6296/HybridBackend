@@ -28,7 +28,9 @@ public class TestContext
 
     private static final ThreadLocal<UserLoginOnNeobankResponse> neobankUserLoginResponse = new ThreadLocal<UserLoginOnNeobankResponse>();
 
+    private static final ThreadLocal<UpdateUserDetailsRequest> updateUserRequest = new ThreadLocal<>();
 
+    private static final ThreadLocal<UpdateUserDetailsResponse> updateUserResponse1 = new ThreadLocal<>();
 
 
 
@@ -157,6 +159,26 @@ public class TestContext
     public static void setNeobankUserLoginResponse(UserLoginOnNeobankResponse userLoginResponse)
     {
         neobankUserLoginResponse.set(userLoginResponse);
+    }
+
+    public static void setUpdateUserRequest(UpdateUserDetailsRequest updateUserDetailsRequest)
+    {
+        updateUserRequest.set(updateUserDetailsRequest);
+    }
+
+    public static UpdateUserDetailsRequest getUpdateUserRequest()
+    {
+        return updateUserRequest.get();
+    }
+
+    public static void setUpdateUserResponse(UpdateUserDetailsResponse updateUserResponse)
+    {
+        updateUserResponse1.set(updateUserResponse);
+    }
+
+    public static UpdateUserDetailsResponse getUpdateUserResponse()
+    {
+        return updateUserResponse1.get();
     }
 
     public static void clear()

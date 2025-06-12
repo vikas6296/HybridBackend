@@ -1,5 +1,6 @@
 package abound.clients;
 
+import api.models.UpdateUserDetailsRequest;
 import api.models.UserLoginOnNeobankRequest;
 import api.utils.HeaderManager;
 import core.Constants;
@@ -18,5 +19,11 @@ public class NeobankUserClient
 
         return BaseClient.performPost(Constants.createUserOnNeobank,userLogin,HeaderManager.getDefaultHeadersForRemittance());
     }
+
+    public Response updateUserDetails(UpdateUserDetailsRequest updateUser)
+    {
+        return BaseClient.performPut(Constants.updateUserDetails,updateUser,HeaderManager.getDefaultHeadersForRemittanceWithBearerToken());
+    }
+
 
 }
