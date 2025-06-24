@@ -12,6 +12,8 @@ public class UpdateUserDetailsBuilder
 
     private String lastname = DataGenerator.getRamdomDataFor(RandomGeneratorTypes.LastName);
 
+    private String email = DataGenerator.generateRandomEmail();
+
     public UpdateUserDetailsBuilder getDOB(String dob)
     {
         this.DOB = dob;
@@ -30,10 +32,16 @@ public class UpdateUserDetailsBuilder
 
     }
 
+    public UpdateUserDetailsBuilder getEmail(String email)
+    {
+        this.email = email;
+        return this;
+    }
+
 
     public UpdateUserDetailsRequest build()
     {
-        return new UpdateUserDetailsRequest(firstName,lastname,DOB);
+        return new UpdateUserDetailsRequest(firstName,lastname,DOB,email);
     }
 
 }

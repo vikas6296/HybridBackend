@@ -19,8 +19,8 @@ public class UserOtpTcResponse
    @JsonProperty("message")
     String message;
 
-   @JsonProperty("customer_id")
-    String customerId;
+   @JsonProperty("user")
+    UserRequest user;
 
    @JsonProperty("remittance_redemption_enabled")
     String remittanceRedemptionEnabled;
@@ -29,11 +29,13 @@ public class UserOtpTcResponse
     String token;
 
 
+
+
     @Override
     public String toString()
     {
         return "UserOtpTcResponse{" +
-                "message= '" + message+"' ,  token = '" +token +"'}";
+                "message= '" + message+"' ,  token = '" +token +"' "+"customerId"+user.getCustomerId()+"}";
     }
 
 }

@@ -10,6 +10,7 @@ import abound.factories.ClientFactory;
 import api.builders.UpdateUserDetailsBuilder;
 import api.models.UpdateUserDetailsRequest;
 import api.models.UpdateUserDetailsResponse;
+import api.utils.HeaderManager;
 import api.utils.TestContext;
 import com.aventstack.extentreports.ExtentTest;
 import io.restassured.response.Response;
@@ -31,8 +32,9 @@ public class NeobankUpdateUserDetailsTest
         PrintUtil.printOperation(updateUser);
         HttpClientAdapter<UpdateUserDetailsRequest> client = ClientFactory.getClient(ClientType.USER, AdapterType.UPDATE_USER_DETAILS);
 
-        Response updateUserDetailsResponse = SafeApiExecutorUtil.execute(client,updateUser,test);
+        final Response updateUserDetailsResponse = SafeApiExecutorUtil.execute(client,updateUser,test);
 
+        PrintUtil.printOperation(HeaderManager.getDefaultHeadersForRemittanceWithBearerToken());
         UpdateUserDetailsResponse updateUserDetailsResponse1 = updateUserDetailsResponse.as(UpdateUserDetailsResponse.class);
 
         PrintUtil.printOperation(updateUserDetailsResponse1);

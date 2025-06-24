@@ -22,7 +22,7 @@ public class Constants
 
 
 
-    public static final String updateUserDetails = "https://devneobank.timesclub.co/times/users//update/v1";
+    public static final String updateUserDetails = "https://devneobank.timesclub.co/times/users/update/v1";
 
     public static final String HEADER_CONTENT_TYPE = "Content-Type";
     public static final String HEADER_AUTH = "Authorization";

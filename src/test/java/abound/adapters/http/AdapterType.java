@@ -10,4 +10,5 @@ public enum AdapterType {
     UPDATE_USER_DETAILS
 
 
+
 }
